@@ -922,3 +922,25 @@ if (preloader) {
         }, 100);
     });
 }
+
+// 3.20.0 Timeline Animation
+
+function animateTimeline() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    timelineItems.forEach((item, index) => {
+        const itemTop = item.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (itemTop < windowHeight * 0.8) {
+            setTimeout(() => {
+                item.classList.add('animate');
+            }, index * 200);
+        }
+    });
+}
+
+// Adicionar ao scroll
+window.addEventListener('scroll', animateTimeline);
+// Executar na carga da página
+document.addEventListener('DOMContentLoaded', animateTimeline);
