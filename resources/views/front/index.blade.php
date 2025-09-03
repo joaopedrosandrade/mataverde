@@ -28,10 +28,10 @@
     <!-- Background Slider Navigation -->
     <div class="background-slider-nav d-none d-sm-flex">
        <div class="background-button-prev">
-          <i class="icon-arrow-left"></i>
+          <i class="ti ti-chevron-left"></i>
        </div>
        <div class="background-button-next">
-          <i class="icon-arrow-right"></i>
+          <i class="ti ti-chevron-right"></i>
        </div>
     </div>
 
@@ -52,10 +52,10 @@
                       
                       <div class="cta-buttons d-flex flex-wrap gap-3">
                          <a href="#" class="btn btn-outline-success-custom">
-                            Solicitar Orçamento <i class="icon-arrow-right"></i>
+                            Solicitar Orçamento <i class="ti ti-arrow-right"></i>
                          </a>
                          <a href="#" class="btn btn-outline-success-custom">
-                            Conheça Nossos Produtos <i class="icon-arrow-right"></i>
+                            Conheça Nossos Produtos <i class="ti ti-arrow-right"></i>
                          </a>
                       </div>
                       
@@ -187,7 +187,7 @@
                 </div>
 
                 <!-- Button -->
-                <a href="#" class="btn btn-success">Saiba Mais Sobre Nós <i class="icon-arrow-right"></i></a>
+                <a href="#" class="btn btn-success">Saiba Mais Sobre Nós <i class="ti ti-arrow-right"></i></a>
              </div>
           </div>
        </div>
@@ -365,7 +365,7 @@
                 </div>
 
                 <!-- Button -->
-                <a href="#" class="btn btn-success">Saiba Mais <i class="icon-arrow-right"></i></a>
+                <a href="#" class="btn btn-success">Saiba Mais <i class="ti ti-arrow-right"></i></a>
              </div>
           </div>
        </div>
@@ -393,10 +393,10 @@
           <div class="col-12 col-sm-6">
              <div class="testimonial-navigation-container justify-content-sm-end">
                 <div class="testimonial-button-prev">
-                   <i class="icon-arrow-left"></i>
+                   <i class="ti ti-chevron-left"></i>
                 </div>
                 <div class="testimonial-button-next">
-                   <i class="icon-arrow-right"></i>
+                   <i class="ti ti-chevron-right"></i>
                 </div>
              </div>
           </div>
@@ -621,7 +621,7 @@
                 </div>
                 <div class="submit-btn">
                    <button type="submit" class="btn btn-light">Enviar Mensagem <i
-                         class="icon-arrow-right"></i></button>
+                         class="ti ti-arrow-right"></i></button>
                 </div>
              </form>
           </div>
@@ -673,7 +673,7 @@
           <!-- Button -->
           <div class="col-12 col-sm-6">
              <div class="text-sm-end">
-                <a href="#" class="btn btn-success">Ver Todas as Notícias <i class="icon-arrow-right"></i></a>
+                <a href="#" class="btn btn-success">Ver Todas as Notícias <i class="ti ti-arrow-right"></i></a>
              </div>
           </div>
        </div>
@@ -700,7 +700,7 @@
                    <a class="post-title h4" href="#">Guia Completo sobre Madeiras Tratadas</a>
                    <div class="d-block mt-3">
                       <a class="btn btn-link" href="#">Ver Detalhes <i
-                            class="icon-arrow-right"></i></a>
+                            class="ti ti-arrow-right"></i></a>
                    </div>
                 </div>
              </div>
@@ -723,7 +723,7 @@
                       <a class="post-title h4" href="#">Benefícios do Eucalipto Tratado em Autoclave</a>
                       <div class="d-block mt-4">
                          <a class="btn btn-link" href="#">Ver Detalhes <i
-                               class="icon-arrow-right"></i></a>
+                               class="ti ti-arrow-right"></i></a>
                       </div>
                    </div>
                 </div>
@@ -743,7 +743,7 @@
                       <a class="post-title h4" href="#">Sustentabilidade na Produção de Madeiras</a>
                       <div class="d-block mt-4">
                          <a class="btn btn-link" href="#">Ver Detalhes <i
-                               class="icon-arrow-right"></i></a>
+                               class="ti ti-arrow-right"></i></a>
                       </div>
                    </div>
                 </div>

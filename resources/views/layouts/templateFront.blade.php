@@ -82,7 +82,7 @@
                   </div>
                </div>
 
-               <a href="#" class="btn btn-success">Saiba Mais <i class="icon-arrow-right"></i></a>
+               <a href="#" class="btn btn-success">Saiba Mais <i class="ti ti-arrow-right"></i></a>
             </div>
          </div>
       </div>
@@ -122,7 +122,7 @@
             <div class="collapse justify-content-xl-end navbar-collapse" id="touriaNav">
                <ul class="navbar-nav align-items-xl-center navbar-nav-scroll">
                   <li>
-                     <a href="#">Inicio</a>
+                     <a href="{{route('front.index')}}">Inicio</a>
                   </li>
                   <li>
                      <a href="{{route('front.sobre')}}">Sobre</a>
@@ -164,8 +164,8 @@
                   </div>-->
 
                  
-                  <a class="btn btn-success" href="{{route('front.orcamento')}}">Solicitar Orçamento <!--<i class="icon-arrow-right"></i>--></a>
-                  <a class="btn  btn-outline-success-custom" href="{{route('front.representante')}}">Seja um Representante <!--<i class="icon-arrow-right"></i>--></a>
+                  <a class="btn btn-success" href="{{route('front.orcamento')}}">Solicitar Orçamento <i class="ti ti-arrow-right"></i></a>
+                  <a class="btn  btn-outline-success-custom" href="{{route('front.representante')}}">Seja um Representante <i class="ti ti-arrow-right"></i></a>
                </div>
             </div>
          </nav>
