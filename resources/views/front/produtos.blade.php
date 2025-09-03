@@ -77,7 +77,7 @@
             <!-- Featured Product Card -->
             <div class="col-12 col-sm-6 col-lg-4">
                <div class="featured-destination-card wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                  <img src="{{asset('assets/img/bg-img/98.jpg')}}" alt="Madeiras para Eletrificação">
+                  <img src="{{asset('assets/img/bg-img/10.jpg')}}" alt="Madeiras para Eletrificação">
 
                   <!-- Overlay Content -->
                   <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
@@ -94,7 +94,7 @@
             <!-- Featured Product Card -->
             <div class="col-12 col-sm-6 col-lg-4">
                <div class="featured-destination-card wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-                  <img src="{{asset('assets/img/bg-img/99.jpg')}}" alt="Madeiras para Telefonia">
+                  <img src="{{asset('assets/img/bg-img/11.jpg')}}" alt="Madeiras para Telefonia">
 
                   <!-- Overlay Content -->
                   <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
@@ -111,7 +111,7 @@
             <!-- Featured Product Card -->
             <div class="col-12 col-sm-6 col-lg-4">
                <div class="featured-destination-card wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
-                  <img src="{{asset('assets/img/bg-img/100.jpg')}}" alt="Madeiras para Meio Rural">
+                  <img src="{{asset('assets/img/bg-img/12.jpg')}}" alt="Madeiras para Meio Rural">
 
                   <!-- Overlay Content -->
                   <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
@@ -128,7 +128,7 @@
       </div>
 
       <!-- Divider -->
-      <div class="divider"></div>
+     
    </section>
 
 
