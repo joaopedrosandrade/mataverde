@@ -5669,6 +5669,108 @@ picture.jarallax-img img {
   }
 }
 
+/* Timeline CSS */
+.timeline-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-wrapper::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #3CB371;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-marker {
+    position: relative;
+    z-index: 10;
+    width: 80px;
+    height: 80px;
+    background: #3CB371;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    box-shadow: 0 4px 15px rgba(60, 179, 113, 0.3);
+}
+
+.timeline-marker .year {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.timeline-content {
+    flex: 1;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.timeline-content h5 {
+    color: #3CB371;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Responsividade para timeline */
+@media (max-width: 768px) {
+    .timeline-wrapper::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: row !important;
+        margin-left: 60px;
+    }
+    
+    .timeline-marker {
+        position: absolute;
+        left: -60px;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+    
+    .timeline-marker .year {
+        font-size: 0.8rem;
+    }
+    
+    .timeline-content {
+        margin-left: 0;
+    }
+}
+
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     .contact-form-wrapper {

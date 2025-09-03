@@ -20,4 +20,9 @@ class FrontController extends Controller
     {
         return view('front.representante');
     }
+
+    public function sobre()
+    {
+        return view('front.sobre');
+    }
 }
