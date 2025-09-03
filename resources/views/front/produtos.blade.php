@@ -191,18 +191,20 @@
       </div>
    </section>
 
-   <!-- Call to Action Section -->
+   <!-- CTA Section - Solicitar Orçamento -->
    <section class="bg-success text-white py-5">
       <div class="container">
-         <div class="row align-items-center">
-            <div class="col-12 col-lg-8">
-               <h3 class="mb-3">Precisa de um orçamento personalizado?</h3>
-               <p class="mb-0">Entre em contato conosco e descubra como nossos produtos podem atender às suas necessidades específicas.</p>
-            </div>
-            <div class="col-12 col-lg-4 text-lg-end">
-               <a href="{{route('front.orcamento')}}" class="btn btn-light btn-lg">Solicitar Orçamento</a>
+         <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center">
+               <h3 class="mb-3 text-white">Interessado em nossos produtos?</h3>
+               <p class="mb-4 text-white">Solicite um orçamento personalizado e descubra como a madeira tratada pode ser a solução ideal para seu projeto.</p>
+               <a href="{{route('front.orcamento')}}" class="btn btn-light btn-lg px-5">
+                  <i class="ti ti-phone me-2"></i>
+                  Solicitar Orçamento
+               </a>
             </div>
          </div>
       </div>
    </section>
+
 @endsection
