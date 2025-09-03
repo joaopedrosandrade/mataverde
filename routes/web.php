@@ -19,3 +19,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'FrontController@index')->name('front.index');
 Route::get('/orcamento', 'FrontController@orcamento')->name('front.orcamento');
+Route::get('/representante', 'FrontController@representante')->name('front.representante');

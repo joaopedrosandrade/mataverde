@@ -5645,6 +5645,30 @@ picture.jarallax-img img {
     margin: 0 auto;
 }
 
+/* Responsividade para breadcrumb */
+@media (max-width: 768px) {
+  .breadcrumb-section .breadcrumb-content {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    min-height: 250px;
+  }
+  
+  .breadcrumb-section .breadcrumb-content h2 {
+    font-size: 32px !important;
+    margin-bottom: 1rem;
+  }
+  
+  .breadcrumb-section .breadcrumb-content ul {
+    padding: 4px 8px;
+    gap: 5px;
+  }
+  
+  .breadcrumb-section .breadcrumb-content ul li,
+  .breadcrumb-section .breadcrumb-content ul li a {
+    font-size: 12px !important;
+  }
+}
+
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     .contact-form-wrapper {
@@ -8321,7 +8345,9 @@ textarea.form-control {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 112px;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  min-height: 300px;
 }
 .breadcrumb-section .breadcrumb-content h2 {
   color: #FFFFFF;

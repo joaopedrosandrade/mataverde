@@ -165,7 +165,7 @@
 
                  
                   <a class="btn btn-success" href="{{route('front.orcamento')}}">Solicitar Orçamento <!--<i class="icon-arrow-right"></i>--></a>
-                  <a class="btn  btn-outline-success-custom" href="#">Seja um Representante <!--<i class="icon-arrow-right"></i>--></a>
+                  <a class="btn  btn-outline-success-custom" href="{{route('front.representante')}}">Seja um Representante <!--<i class="icon-arrow-right"></i>--></a>
                </div>
             </div>
          </nav>

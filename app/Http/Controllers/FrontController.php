@@ -15,4 +15,9 @@ class FrontController extends Controller
     {
         return view('front.orcamento');
     }
+
+    public function representante()
+    {
+        return view('front.representante');
+    }
 }
