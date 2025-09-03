@@ -353,7 +353,7 @@
 
    <!-- Scroll To Top -->
    <button id="scrollTopButton" class="touria-scrolltop scrolltop-hide">
-      <i class="icon-arrow-up"></i>
+      <i class="ti ti-arrow-up"></i>
    </button>
 
    <!-- WhatsApp Floating Button -->
