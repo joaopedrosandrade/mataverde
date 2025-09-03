@@ -5624,12 +5624,14 @@ picture.jarallax-img img {
 }
 
 .contact-form-wrapper .section-heading h2 {
-    color: #fff;
+    color: #3CB371;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 .contact-form-wrapper .section-heading p {
-    color: #e0e0e0;
+    color: #161920;
+    font-weight: 500;
 }
 
 /* Correção de alinhamento do formulário */

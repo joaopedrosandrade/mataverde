@@ -30,7 +30,7 @@
          <div class="contact-form-wrapper bg-secondary">
             <!-- Section Heading -->
             <div class="section-heading text-center">
-               <h2>Solicite seu Orçamento</h2>
+               <h2>Orçamento</h2>
                <p class="mb-0">Preencha o formulário abaixo e nossa equipe entrará em contato para fornecer um orçamento personalizado para suas necessidades.</p>
             </div>
 
@@ -83,7 +83,7 @@
                      </div>
                   </div>
                   <div class="col-12">
-                     <button type="submit" class="btn btn-success w-100 mt-3">Enviar Solicitação <i class="icon-arrow-right"></i></button>
+                     <button type="submit" class="btn btn-success w-100 mt-3">Enviar Solicitação <i class="ti ti-arrow-right"></i></button>
                   </div>
                </div>
             </form>
