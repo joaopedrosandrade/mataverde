@@ -21,3 +21,4 @@ Route::get('/', 'FrontController@index')->name('front.index');
 Route::get('/orcamento', 'FrontController@orcamento')->name('front.orcamento');
 Route::get('/representante', 'FrontController@representante')->name('front.representante');
 Route::get('/sobre', 'FrontController@sobre')->name('front.sobre');
+Route::get('/produtos', 'FrontController@produtos')->name('front.produtos');

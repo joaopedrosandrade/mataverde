@@ -128,7 +128,7 @@
                      <a href="{{route('front.sobre')}}">Sobre</a>
                   </li>
                   <li>
-                     <a href="#">Produtos</a>
+                     <a href="{{route('front.produtos')}}">Produtos</a>
                   </li>
                   <li>
                      <a href="#">Qualidade</a>
