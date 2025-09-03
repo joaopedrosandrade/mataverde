@@ -164,7 +164,7 @@
                   </div>-->
 
                  
-                  <a class="btn btn-success" href="#">Solicitar Orçamento <!--<i class="icon-arrow-right"></i>--></a>
+                  <a class="btn btn-success" href="{{route('front.orcamento')}}">Solicitar Orçamento <!--<i class="icon-arrow-right"></i>--></a>
                   <a class="btn  btn-outline-success-custom" href="#">Seja um Representante <!--<i class="icon-arrow-right"></i>--></a>
                </div>
             </div>
@@ -300,7 +300,7 @@
 
                   <!-- Footer Nav -->
                   <ul class="footer-nav">
-                     <li><a href="#">Solicite um Orçamento</a></li>
+                     <li><a href="{{route('front.orcamento')}}">Solicite um Orçamento</a></li>
                      <li><a href="#">Seja um Representante</a></li>
                      
                   </ul>

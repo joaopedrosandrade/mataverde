@@ -5584,6 +5584,81 @@ picture.jarallax-img img {
         flex-wrap: nowrap;
   }
 }
+
+/* Estilos para a página de orçamento */
+.feature-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.feature-card .icon {
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h5 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Melhorias no formulário de orçamento */
+.contact-form-wrapper {
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+}
+
+.contact-form-wrapper .section-heading h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.contact-form-wrapper .section-heading p {
+    color: #e0e0e0;
+}
+
+/* Correção de alinhamento do formulário */
+.contact-page-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.contact-page-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .contact-form-wrapper {
+        padding: 2rem 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-page-section {
+        padding: 2rem 0;
+    }
+}
 @media only screen and (min-width:992px) {
   .testimonial-card-two {
     padding: 40px;
