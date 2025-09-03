@@ -16,8 +16,7 @@
          </div>
       </div>
 
-      <!-- Divider -->
-      <div class="divider"></div>
+    
    </div>
 
    <!-- Divider -->
