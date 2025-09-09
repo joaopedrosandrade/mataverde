@@ -285,7 +285,9 @@
                 <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
                    <div>
                       <p class="mb-1 text-white">Produto</p>
-                      <h4 class="mb-0 text-white">Eucalipto Tratado</h4>
+                      <h4 class="mb-0 text-white">Construção rural
+
+                      </h4>
                    </div>
                    <!-- Badge -->
                    <span class="badge bg-success">Durabilidade</span>
@@ -302,7 +304,8 @@
                 <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
                    <div>
                       <p class="mb-1 text-white">Produto</p>
-                      <h4 class="mb-0 text-white">Madeira Autoclavada</h4>
+                      <h4 class="mb-0 text-white">
+                        Construção civil e paisagismo</h4>
                    </div>
                    <!-- Badge -->
                    <span class="badge bg-success">Qualidade</span>
@@ -319,7 +322,7 @@
                 <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
                    <div>
                       <p class="mb-1 text-white">Produto</p>
-                      <h4 class="mb-0 text-white">Postes e Dormentes</h4>
+                      <h4 class="mb-0 text-white">Fruticultura</h4>
                    </div>
                    <!-- Badge -->
                    <span class="badge bg-success">Resistência</span>
