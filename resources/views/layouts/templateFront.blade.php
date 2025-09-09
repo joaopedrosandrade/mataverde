@@ -181,11 +181,7 @@
    <!-- Footer -->
    <footer class="footer-wrapper jarallax" data-jarallax data-speed="0.6"
       style="background-image: url('assets/img/bg-img/35.jpg');">
-      <!-- Plane Image -->
-      <img class="plane-img" src="assets/img/core-img/shape44.png" alt="">
-
-      <!-- Tree Image -->
-      <img class="tree-img" src="assets/img/core-img/tree.png" alt="">
+    
 
       <!-- Divider -->
       <div class="divider"></div>
@@ -237,7 +233,7 @@
                </div>
                <div>
                   <h4 class="text-white">Email</h4>
-                  <p class="mb-0 text-white">contato@madeirasmataverde.com.br </p>
+                  <p class="mb-0 text-white">financeiro@madeirasmataverde.com.br </p>
                </div>
             </div>
          </div>
@@ -250,74 +246,8 @@
          <div class="border-top"></div>
       </div>
 
-      <!-- Divider -->
-      <div class="divider"></div>
-
-      <div class="container">
-         <div class="row g-5">
-            <!-- Footer Card -->
-            <div class="col-12 col-sm-6 col-lg-4">
-               <div class="footer-card pe-lg-5">
-                  <a href="#" class="footer-logo">
-                     <img src="assets/img/core-img/logo-three.png" alt="">
-                  </a>
-                  <p class="mb-0 text-white">CNPJ: 11.636.616/0001-70</p>
-
-                  <!-- Social Nav -->
-                  <div class="social-nav">
-                     <a href="#">
-                        <i class="ti ti-brand-whatsapp"></i>
-                     </a>
-                    
-                     </a>
-                     <a href="#">
-                        <i class="ti ti-brand-instagram"></i>
-                     </a>
-                  </div>
-               </div>
-            </div>
-
-            <!-- Footer Card -->
-            <div class="col-12 col-sm-6 col-lg">
-               <div class="footer-card">
-                  <h5 class="mb-5 card-title text-white">Mata Verde</h5>
-
-                  <!-- Footer Nav -->
-                  <ul class="footer-nav">
-                     <li><a href="#">Início</a></li>
-                     <li><a href="#">Sobre</a></li>
-                     <li><a href="#">Produtos</a></li>
-                     <li><a href="#">Qualidade</a></li>
-                     <li><a href="#">Contato</a></li>
-                  </ul>
-               </div>
-            </div>
-
-            <!-- Footer Card -->
-            <div class="col-12 col-sm-6 col-lg">
-               <div class="footer-card">
-                  <h5 class="mb-5 card-title text-white">Ações</h5>
-
-                  <!-- Footer Nav -->
-                  <ul class="footer-nav">
-                     <li><a href="{{route('front.orcamento')}}">Solicite um Orçamento</a></li>
-                     <li><a href="#">Seja um Representante</a></li>
-                     
-                  </ul>
-               </div>
-            </div>
-
-            <!-- Footer Card -->
-            
-         </div>
-      </div>
-
-      <!-- Divider -->
-      <div class="divider"></div>
-
-      <div class="container">
-         <div class="border-top"></div>
-      </div>
+    
+  
 
       <!-- Copyright -->
       <div class="copyright-wrapper">

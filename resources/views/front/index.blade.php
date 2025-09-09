@@ -44,7 +44,7 @@
                    Qualidade, Durabilidade e Garantia.</h3>
                 <h2 class="text-white mb-4 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">Madeiras
                    Mata Verde</h2>
-                <p class="text-white wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1000ms">Especialistas em eucaliptos e outras madeiras tratadas. <br>Produtos de alta qualidade para construção civil, paisagismo e projetos sustentáveis.</p>
+                <p class="text-white wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1000ms">Especialistas em eucalipto tratado. <br>Produtos de alta qualidade para construção rural, civil, paisagismo e projetos sustentáveis.</p>
 
                 <!-- Hero CTA -->
                 <div class="hero-cta wow fadeInUp" data-wow-delay="900ms" data-wow-duration="1000ms">
@@ -132,7 +132,7 @@
           <div class="col-12 col-lg-6">
              <div class="about-content ps-md-5">
                 <div class="section-heading">
-                   <span class="sub-title text-success ff-montez">Sobre Nós</span>
+                   <span class="sub-title text-success ff-montez">O que fazemos</span>
                    <h2 class="mb-4">Empresa Líder em Madeiras Tratadas</h2>
                 </div>
 
@@ -207,12 +207,12 @@
           <div class="col-12 col-sm-6">
              <div class="section-heading">
                 <span class="sub-title text-success">Produtos em Destaque</span>
-                <h2 class="mb-0">Nossos Principais Produtos</h2>
+                <h2 class="mb-0">Construções feitas com madeiras Mata Verde</h2>
              </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-4 offset-lg-2">
              <div class="section-heading">
-                <p class="mb-0">Oferecemos uma ampla variedade de madeiras tratadas para diferentes aplicações na construção civil e paisagismo.</p>
+                <p class="mb-0">Oferecemos uma ampla variedade de madeiras tratadas para diferentes aplicações na construção rural, civil, paisagismo, entre outras. </p>
              </div>
           </div>
        </div>
@@ -539,8 +539,7 @@
              <div class="section-heading">
                
                 <h2 class="mb-4 text-white">Precisa de Madeiras Tratadas para Seu Projeto?</h2>
-                <p class="text-white mb-5">Entre em contato conosco e descubra como podemos ajudar em seu projeto. Oferecemos consultoria especializada e produtos de qualidade para construção civil e paisagismo.
-                </p>
+                <p class="text-white mb-5">Entre em contato conosco e descubra como podemos ajudar em seu projeto. Oferecemos produtos de qualidade para construção rural, civil, paisagismo, entre outros.              </p>
              </div>
 
              <form class="me-lg-5" action="#">
@@ -631,23 +630,30 @@
                 <div class="col-12 col-sm-6">
                    <div class="d-flex gap-5 flex-column">
                       <div class="happy-counts wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                         <h3 class="counter">15<span>+</span></h3>
-                         <h5 class="mb-0">Anos de Experiência</h5>
+                         <h3 class="counter"><span>+</span> 20</h3>
+                         <h5 class="mb-0">Anos de Mercado</h5>
                       </div>
 
                       <div class="happy-counts wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-                         <h3 class="counter">500<span>+</span></h3>
+                         <h3 class="counter"><span>+</span> 5000</h3>
                          <h5 class="mb-0">Clientes Satisfeitos</h5>
                       </div>
                    </div>
                 </div>
 
                 <div class="col-12 col-sm-6">
+                  <div class="d-flex gap-5 flex-column">
                    <div class="happy-counts wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
-                      <h3 class="counter">1000<span>+</span></h3>
-                      <h5 class="mb-0">Projetos Realizados</h5>
+                      <h3 class="counter">24</h3>
+                      <h5 class="mb-0">Estados Atendidos</h5>
                    </div>
+                   <div class="happy-counts wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                     <h3 class="counter">15</h3>
+                     <h5 class="mb-0">Anos de Garantia</h5>
+                  </div>
+                  </div>
                 </div>
+                
              </div>
           </div>
        </div>
