@@ -180,7 +180,7 @@
 
    <!-- Footer -->
    <footer class="footer-wrapper jarallax" data-jarallax data-speed="0.6"
-      style="background-image: url('assets/img/bg-img/35.jpg');">
+      style="background-image: url('assets/img/bg-img/1.jpg');">
     
 
       <!-- Divider -->
