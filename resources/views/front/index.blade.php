@@ -3,6 +3,62 @@
 
 @section('content')
 
+<style>
+.testimonial-thumbnail-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-content {
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-thumbnail {
+    position: relative;
+}
+
+.testimonial-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    pointer-events: auto;
+}
+
+.testimonial-play-btn:hover {
+    opacity: 1;
+}
+
+.testimonial-play-btn {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    transition: background 0.3s ease;
+}
+
+.testimonial-play-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+</style>
+
 <section class="hero-section bg-dark">
     <!-- Cloud Image -->
     <div class="cloud-img"></div>
@@ -407,7 +463,7 @@
        <div class="swiper testimonial-swiper">
           <div class="swiper-wrapper">
              <!-- Testimonial Card -->
-             <div class="swiper-slide testimonial-card" style="background-image: url('assets/img/bg-img/24.jpg');">
+             <div class="swiper-slide testimonial-card slide-expand" style="background-image: url('assets/img/bg-img/24.jpg');">
                 <!-- Testimonial Content -->
                 <div class="testimonial-content">
                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
@@ -422,7 +478,15 @@
                 </div>
 
                 <!-- Testimonial Thumbnail -->
-                <div class="testimonial-thumbnail" style="background-image: url('assets/img/bg-img/24.jpg');"></div>
+                <div class="testimonial-thumbnail">
+                   <video class="testimonial-thumbnail-video" autoplay muted loop>
+                      <source src="assets/video/dep1.mp4" type="video/mp4">
+                   </video>
+                   <!-- Play Button -->
+                   <button class="testimonial-play-btn" data-video="assets/video/dep1.mp4" type="button">
+                      <i class="ti ti-player-play-filled"></i>
+                   </button>
+                </div>
              </div>
 
              <!-- Testimonial Card -->
@@ -441,85 +505,18 @@
                 </div>
 
                 <!-- Testimonial Thumbnail -->
-                <div class="testimonial-thumbnail" style="background-image: url('assets/img/bg-img/25.jpg');"></div>
-             </div>
-
-             <!-- Testimonial Card -->
-             <div class="swiper-slide testimonial-card slide-expand"
-                style="background-image: url('assets/img/bg-img/23.jpg');">
-                <!-- Testimonial Content -->
-                <div class="testimonial-content">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
-                      <path
-                         d="M12.6562 8.19922C5.67612 8.19922 0 13.8769 0 20.8555C0 27.2268 4.7307 32.5137 10.8672 33.385C10.3759 36.9539 9.01325 40.3497 6.88426 43.2944C6.47019 43.8691 6.4857 44.6477 6.9275 45.2039C7.36098 45.7511 8.11424 45.9586 8.77532 45.6797C18.8206 41.4868 25.3125 31.7412 25.3125 20.8555C25.3125 13.8769 19.6364 8.19922 12.6562 8.19922ZM41.3438 8.19922C34.3636 8.19922 28.6875 13.8769 28.6875 20.8555C28.6875 27.2268 33.4182 32.5137 39.5547 33.385C39.0634 36.9539 37.7008 40.3497 35.5718 43.2944C35.1577 43.8691 35.1732 44.6477 35.615 45.2039C36.0485 45.7511 36.8017 45.9586 37.4628 45.6797C47.5081 41.4868 54 31.7412 54 20.8555C54 13.8769 48.3239 8.19922 41.3438 8.19922Z"
-                         fill="#3CB371" />
-                   </svg>
-                   <p class="testimonial-text">"Como representante da Mata Verde, posso dizer que a empresa oferece excelente suporte e produtos de qualidade superior. Nossos clientes ficam sempre satisfeitos."</p>
-                   <div class="border-top"></div>
-                   <h4>Carlos Oliveira</h4>
-                   <span>Representante Comercial</span>
+                <div class="testimonial-thumbnail">
+                   <video class="testimonial-thumbnail-video" autoplay muted loop>
+                      <source src="assets/video/dep2.mp4" type="video/mp4">
+                   </video>
+                   <!-- Play Button -->
+                   <button class="testimonial-play-btn" data-video="assets/video/dep2.mp4" type="button">
+                      <i class="ti ti-player-play-filled"></i>
+                   </button>
                 </div>
-
-                <!-- Testimonial Thumbnail -->
-                <div class="testimonial-thumbnail" style="background-image: url('assets/img/bg-img/23.jpg');"></div>
              </div>
 
-             <!-- Testimonial Card -->
-             <div class="swiper-slide testimonial-card" style="background-image: url('assets/img/bg-img/24.jpg');">
-                <!-- Testimonial Content -->
-                <div class="testimonial-content">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
-                      <path
-                         d="M12.6562 8.19922C5.67612 8.19922 0 13.8769 0 20.8555C0 27.2268 4.7307 32.5137 10.8672 33.385C10.3759 36.9539 9.01325 40.3497 6.88426 43.2944C6.47019 43.8691 6.4857 44.6477 6.9275 45.2039C7.36098 45.7511 8.11424 45.9586 8.77532 45.6797C18.8206 41.4868 25.3125 31.7412 25.3125 20.8555C25.3125 13.8769 19.6364 8.19922 12.6562 8.19922ZM41.3438 8.19922C34.3636 8.19922 28.6875 13.8769 28.6875 20.8555C28.6875 27.2268 33.4182 32.5137 39.5547 33.385C39.0634 36.9539 37.7008 40.3497 35.5718 43.2944C35.1577 43.8691 35.1732 44.6477 35.615 45.2039C36.0485 45.7511 36.8017 45.9586 37.4628 45.6797C47.5081 41.4868 54 31.7412 54 20.8555C54 13.8769 48.3239 8.19922 41.3438 8.19922Z"
-                         fill="#3CB371" />
-                   </svg>
-                   <p class="testimonial-text">"Excelente qualidade! As madeiras tratadas da Mata Verde superaram nossas expectativas. O projeto de paisagismo ficou perfeito e a durabilidade é impressionante."</p>
-                   <div class="border-top"></div>
-                   <h4>João Silva</h4>
-                   <span>Construtor Civil</span>
-                </div>
-
-                <!-- Testimonial Thumbnail -->
-                <div class="testimonial-thumbnail" style="background-image: url('assets/img/bg-img/24.jpg');"></div>
-             </div>
-
-             <!-- Testimonial Card -->
-             <div class="swiper-slide testimonial-card" style="background-image: url('assets/img/bg-img/25.jpg');">
-                <!-- Testimonial Content -->
-                <div class="testimonial-content">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
-                      <path
-                         d="M12.6562 8.19922C5.67612 8.19922 0 13.8769 0 20.8555C0 27.2268 4.7307 32.5137 10.8672 33.385C10.3759 36.9539 9.01325 40.3497 6.88426 43.2944C6.47019 43.8691 6.4857 44.6477 6.9275 45.2039C7.36098 45.7511 8.11424 45.9586 8.77532 45.6797C18.8206 41.4868 25.3125 31.7412 25.3125 20.8555C25.3125 13.8769 19.6364 8.19922 12.6562 8.19922ZM41.3438 8.19922C34.3636 8.19922 28.6875 13.8769 28.6875 20.8555C28.6875 27.2268 33.4182 32.5137 39.5547 33.385C39.0634 36.9539 37.7008 40.3497 35.5718 43.2944C35.1577 43.8691 35.1732 44.6477 35.615 45.2039C36.0485 45.7511 36.8017 45.9586 37.4628 45.6797C47.5081 41.4868 54 31.7412 54 20.8555C54 13.8769 48.3239 8.19922 41.3438 8.19922Z"
-                         fill="#3CB371" />
-                   </svg>
-                   <p class="testimonial-text">"Atendimento impecável e produtos de primeira linha. A Madeiras Mata Verde é nossa parceira de confiança para todos os projetos de infraestrutura."</p>
-                   <div class="border-top"></div>
-                   <h4>Maria Santos</h4>
-                   <span>Engenheira Civil</span>
-                </div>
-
-                <!-- Testimonial Thumbnail -->
-                <div class="testimonial-thumbnail" style="background-image: url('assets/img/bg-img/25.jpg');"></div>
-             </div>
-
-             <!-- Testimonial Card -->
-             <div class="swiper-slide testimonial-card" style="background-image: url('assets/img/bg-img/23.jpg');">
-                <!-- Testimonial Content -->
-                <div class="testimonial-content">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
-                      <path
-                         d="M12.6562 8.19922C5.67612 8.19922 0 13.8769 0 20.8555C0 27.2268 4.7307 32.5137 10.8672 33.385C10.3759 36.9539 9.01325 40.3497 6.88426 43.2944C6.47019 43.8691 6.4857 44.6477 6.9275 45.2039C7.36098 45.7511 8.11424 45.9586 8.77532 45.6797C18.8206 41.4868 25.3125 31.7412 25.3125 20.8555C25.3125 13.8769 19.6364 8.19922 12.6562 8.19922ZM41.3438 8.19922C34.3636 8.19922 28.6875 13.8769 28.6875 20.8555C28.6875 27.2268 33.4182 32.5137 39.5547 33.385C39.0634 36.9539 37.7008 40.3497 35.5718 43.2944C35.1577 43.8691 35.1732 44.6477 35.615 45.2039C36.0485 45.7511 36.8017 45.9586 37.4628 45.6797C47.5081 41.4868 54 31.7412 54 20.8555C54 13.8769 48.3239 8.19922 41.3438 8.19922Z"
-                         fill="#3CB371" />
-                   </svg>
-                   <p class="testimonial-text">"Como representante da Mata Verde, posso dizer que a empresa oferece excelente suporte e produtos de qualidade superior. Nossos clientes ficam sempre satisfeitos."</p>
-                   <div class="border-top"></div>
-                   <h4>Carlos Oliveira</h4>
-                   <span>Representante Comercial</span>
-                </div>
-
-                <!-- Testimonial Thumbnail -->
-                <div class="testimonial-thumbnail" style="background-image: url('assets/img/bg-img/23.jpg');"></div>
-             </div>
+           
           </div>
        </div>
     </div>
@@ -762,4 +759,70 @@
     <!-- Divider -->
     <div class="divider"></div>
  </section>
+<!-- Video Modal -->
+<div id="testimonialVideoModal" class="modal fade" tabindex="-1" aria-labelledby="testimonialVideoModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="testimonialVideoModalLabel">Depoimento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+               <video id="testimonialVideo" controls>
+                  <source src="" type="video/mp4">
+                  Seu navegador não suporta o elemento de vídeo.
+               </video>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   console.log('Script carregado');
+   
+   const modalElement = document.getElementById('testimonialVideoModal');
+   const video = document.getElementById('testimonialVideo');
+   const videoSource = video.querySelector('source');
+   
+   if (!modalElement || !video || !videoSource) {
+      console.error('Elementos do modal não encontrados');
+      return;
+   }
+   
+   const modal = new bootstrap.Modal(modalElement);
+   
+   // Adicionar event listeners para os botões de play
+   const playButtons = document.querySelectorAll('.testimonial-play-btn');
+   console.log('Botões encontrados:', playButtons.length);
+   
+   playButtons.forEach((btn, index) => {
+      console.log('Adicionando listener ao botão', index);
+      btn.addEventListener('click', function(e) {
+         e.preventDefault();
+         e.stopPropagation();
+         
+         const videoSrc = this.getAttribute('data-video');
+         console.log('Clicou no botão, vídeo:', videoSrc);
+         
+         if (videoSrc) {
+            videoSource.src = videoSrc;
+            video.load();
+            modal.show();
+         } else {
+            console.error('Atributo data-video não encontrado');
+         }
+      });
+   });
+   
+   // Pausar vídeo quando o modal for fechado
+   modalElement.addEventListener('hidden.bs.modal', function() {
+      video.pause();
+      video.currentTime = 0;
+   });
+});
+</script>
+
 @endsection
