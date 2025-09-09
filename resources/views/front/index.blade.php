@@ -471,10 +471,10 @@
                          d="M12.6562 8.19922C5.67612 8.19922 0 13.8769 0 20.8555C0 27.2268 4.7307 32.5137 10.8672 33.385C10.3759 36.9539 9.01325 40.3497 6.88426 43.2944C6.47019 43.8691 6.4857 44.6477 6.9275 45.2039C7.36098 45.7511 8.11424 45.9586 8.77532 45.6797C18.8206 41.4868 25.3125 31.7412 25.3125 20.8555C25.3125 13.8769 19.6364 8.19922 12.6562 8.19922ZM41.3438 8.19922C34.3636 8.19922 28.6875 13.8769 28.6875 20.8555C28.6875 27.2268 33.4182 32.5137 39.5547 33.385C39.0634 36.9539 37.7008 40.3497 35.5718 43.2944C35.1577 43.8691 35.1732 44.6477 35.615 45.2039C36.0485 45.7511 36.8017 45.9586 37.4628 45.6797C47.5081 41.4868 54 31.7412 54 20.8555C54 13.8769 48.3239 8.19922 41.3438 8.19922Z"
                          fill="#3CB371" />
                    </svg>
-                   <p class="testimonial-text">"Excelente qualidade! As madeiras tratadas da Mata Verde superaram nossas expectativas. O projeto de paisagismo ficou perfeito e a durabilidade é impressionante."</p>
+                   <p class="testimonial-text">"A parceria de cinco anos com a Mata Verde demonstra que a empresa é sucesso quando o assunto é eucalipto"</p>
                    <div class="border-top"></div>
-                   <h4>João Silva</h4>
-                   <span>Construtor Civil</span>
+                   <h4>Valentina</h4>
+                   <span> Casa da Lasca</span>
                 </div>
 
                 <!-- Testimonial Thumbnail -->
@@ -498,10 +498,10 @@
                          d="M12.6562 8.19922C5.67612 8.19922 0 13.8769 0 20.8555C0 27.2268 4.7307 32.5137 10.8672 33.385C10.3759 36.9539 9.01325 40.3497 6.88426 43.2944C6.47019 43.8691 6.4857 44.6477 6.9275 45.2039C7.36098 45.7511 8.11424 45.9586 8.77532 45.6797C18.8206 41.4868 25.3125 31.7412 25.3125 20.8555C25.3125 13.8769 19.6364 8.19922 12.6562 8.19922ZM41.3438 8.19922C34.3636 8.19922 28.6875 13.8769 28.6875 20.8555C28.6875 27.2268 33.4182 32.5137 39.5547 33.385C39.0634 36.9539 37.7008 40.3497 35.5718 43.2944C35.1577 43.8691 35.1732 44.6477 35.615 45.2039C36.0485 45.7511 36.8017 45.9586 37.4628 45.6797C47.5081 41.4868 54 31.7412 54 20.8555C54 13.8769 48.3239 8.19922 41.3438 8.19922Z"
                          fill="#3CB371" />
                    </svg>
-                   <p class="testimonial-text">"Atendimento impecável e produtos de primeira linha. A Madeiras Mata Verde é nossa parceira de confiança para todos os projetos de infraestrutura."</p>
+                   <p class="testimonial-text">"Trabalho desde 2004 com a Mata Verde e sempre tive uma parceria de sucesso"</p>
                    <div class="border-top"></div>
-                   <h4>Maria Santos</h4>
-                   <span>Engenheira Civil</span>
+                   <h4>Adeberbal Marciel</h4>
+                   <span>Líder Ferro e Aço e Madeiras</span>
                 </div>
 
                 <!-- Testimonial Thumbnail -->
