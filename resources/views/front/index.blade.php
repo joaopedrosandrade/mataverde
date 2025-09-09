@@ -283,7 +283,7 @@
                     <!-- Processo 1 -->
                     <div class="process-step d-flex align-items-center gap-3">
                        <div class="process-image">
-                          <img src="assets/img/bg-img/7.jpg" alt="Escolha das espécies ideais" class="img-fluid rounded">
+                          <img src="assets/img/bg-img/a.jpg" alt="Escolha das espécies ideais" class="img-fluid rounded">
                        </div>
                        <div class="process-content">
                           <h5 class="mb-1">Escolha das espécies ideais</h5>
@@ -294,7 +294,7 @@
                     <!-- Processo 2 -->
                     <div class="process-step d-flex align-items-center gap-3">
                        <div class="process-image">
-                          <img src="assets/img/bg-img/8.jpg" alt="Condução das florestas" class="img-fluid rounded">
+                          <img src="assets/img/bg-img/b.jpg" alt="Condução das florestas" class="img-fluid rounded">
                        </div>
                        <div class="process-content">
                           <h5 class="mb-1">Condução das florestas</h5>
@@ -305,7 +305,7 @@
                     <!-- Processo 3 -->
                     <div class="process-step d-flex align-items-center gap-3">
                        <div class="process-image">
-                          <img src="assets/img/bg-img/9.jpg" alt="Corte e transporte para usina" class="img-fluid rounded">
+                          <img src="assets/img/bg-img/c.jpg" alt="Corte e transporte para usina" class="img-fluid rounded">
                        </div>
                        <div class="process-content">
                           <h5 class="mb-1">Corte e transporte para usina</h5>
@@ -316,7 +316,7 @@
                     <!-- Processo 4 -->
                     <div class="process-step d-flex align-items-center gap-3">
                        <div class="process-image">
-                          <img src="assets/img/bg-img/10.jpg" alt="Tratamento em autoclave e expedição" class="img-fluid rounded">
+                          <img src="assets/img/bg-img/d.jpg" alt="Tratamento em autoclave e expedição" class="img-fluid rounded">
                        </div>
                        <div class="process-content">
                           <h5 class="mb-1">Tratamento em autoclave e expedição</h5>
@@ -849,7 +849,7 @@
    <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
          <div class="modal-header">
-            <h5 class="modal-title" id="testimonialVideoModalLabel">Depoimento</h5>
+           
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body p-0">
