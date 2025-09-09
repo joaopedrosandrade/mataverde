@@ -93,6 +93,53 @@
     font-size: 0.9rem;
     line-height: 1.4;
 }
+
+/* Estilos para o botão de play da seção About */
+.about-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    pointer-events: auto;
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    transition: background 0.3s ease;
+}
+
+.about-play-btn:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.second-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+}
+
+.about-background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
 </style>
 
 <section class="hero-section bg-dark">
@@ -201,17 +248,17 @@
                    <img src="assets/img/bg-img/7.jpg" alt="">
                 </div>
 
-                <!-- Second Image -->
-                <div class="second-img wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
-                   <img src="assets/img/bg-img/8.jpg" alt="">
+                 <!-- Second Image -->
+                 <div class="second-img wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
+                    <video class="about-background-video" autoplay muted loop>
+                       <source src="assets/video/sobre.mp4" type="video/mp4">
+                    </video>
 
-                   <!-- Play Video -->
-                   <div class="play-video-btn video-btn" data-video="https://www.youtube.com/watch?v=N7X_06Y74rg">
-                      <div class="icon">
-                         <i class="ti ti-player-play-filled"></i>
-                      </div>
-                   </div>
-                </div>
+                    <!-- Play Video Button -->
+                    <button class="about-play-btn" data-video="assets/video/sobre.mp4" type="button">
+                       <i class="ti ti-player-play-filled"></i>
+                    </button>
+                 </div>
 
                 <!-- Third Image -->
                 <div class="third-img wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1000ms">
@@ -278,8 +325,7 @@
                     </div>
                  </div>
 
-                 <!-- Button -->
-                 <a href="#" class="btn btn-success">Saiba Mais Sobre Nós <i class="ti ti-arrow-right"></i></a>
+                
               </div>
            </div>
        </div>
@@ -833,28 +879,51 @@ document.addEventListener('DOMContentLoaded', function() {
    
    const modal = new bootstrap.Modal(modalElement);
    
-   // Adicionar event listeners para os botões de play
-   const playButtons = document.querySelectorAll('.testimonial-play-btn');
-   console.log('Botões encontrados:', playButtons.length);
-   
-   playButtons.forEach((btn, index) => {
-      console.log('Adicionando listener ao botão', index);
-      btn.addEventListener('click', function(e) {
-         e.preventDefault();
-         e.stopPropagation();
-         
-         const videoSrc = this.getAttribute('data-video');
-         console.log('Clicou no botão, vídeo:', videoSrc);
-         
-         if (videoSrc) {
-            videoSource.src = videoSrc;
-            video.load();
-            modal.show();
-         } else {
-            console.error('Atributo data-video não encontrado');
-         }
-      });
-   });
+    // Adicionar event listeners para os botões de play dos depoimentos
+    const testimonialPlayButtons = document.querySelectorAll('.testimonial-play-btn');
+    console.log('Botões de depoimento encontrados:', testimonialPlayButtons.length);
+    
+    testimonialPlayButtons.forEach((btn, index) => {
+       console.log('Adicionando listener ao botão de depoimento', index);
+       btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          const videoSrc = this.getAttribute('data-video');
+          console.log('Clicou no botão de depoimento, vídeo:', videoSrc);
+          
+          if (videoSrc) {
+             videoSource.src = videoSrc;
+             video.load();
+             modal.show();
+          } else {
+             console.error('Atributo data-video não encontrado');
+          }
+       });
+    });
+    
+    // Adicionar event listeners para o botão de play da seção About
+    const aboutPlayButton = document.querySelector('.about-play-btn');
+    if (aboutPlayButton) {
+       console.log('Botão About encontrado');
+       aboutPlayButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          const videoSrc = this.getAttribute('data-video');
+          console.log('Clicou no botão About, vídeo:', videoSrc);
+          
+          if (videoSrc) {
+             videoSource.src = videoSrc;
+             video.load();
+             modal.show();
+          } else {
+             console.error('Atributo data-video não encontrado no botão About');
+          }
+       });
+    } else {
+       console.log('Botão About não encontrado');
+    }
    
    // Pausar vídeo quando o modal for fechado
    modalElement.addEventListener('hidden.bs.modal', function() {
