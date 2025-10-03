@@ -5593,6 +5593,9 @@ picture.jarallax-img img {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
 }
 
 .feature-card:hover {
@@ -5667,6 +5670,67 @@ picture.jarallax-img img {
   .breadcrumb-section .breadcrumb-content ul li a {
     font-size: 12px !important;
   }
+}
+
+/* Estilos específicos para página de contato */
+.contato-page {
+    position: relative;
+    z-index: 1;
+}
+
+.contato-page .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contato-page .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contato-page .form-label {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contato-page .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.contato-page .form-control:focus {
+    border-color: #3CB371;
+    box-shadow: 0 0 0 0.2rem rgba(60, 179, 113, 0.25);
+}
+
+.contato-page .btn-success {
+    background-color: #3CB371;
+    border-color: #3CB371;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contato-page .btn-success:hover {
+    background-color: #2d8f57;
+    border-color: #2d8f57;
+    transform: translateY(-2px);
+}
+
+.contato-page .btn-outline-success {
+    color: #3CB371;
+    border-color: #3CB371;
+    transition: all 0.3s ease;
+}
+
+.contato-page .btn-outline-success:hover {
+    background-color: #3CB371;
+    border-color: #3CB371;
+    color: #fff;
 }
 
 /* Timeline CSS - Melhorado */

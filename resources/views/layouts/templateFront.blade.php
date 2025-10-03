@@ -135,7 +135,7 @@
                   </li>
                  
                   <li>
-                     <a href="#">Contato</a>
+                     <a href="{{route('front.contato')}}">Contato</a>
                   </li>
                </ul>
 
