@@ -366,7 +366,7 @@
                 <!-- Overlay Content -->
                 <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
                    <div>
-                      <p class="mb-1 text-white">Produto</p>
+                    
                       <h4 class="mb-0 text-white">Construção rural
 
                       </h4>
@@ -385,7 +385,7 @@
                 <!-- Overlay Content -->
                 <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
                    <div>
-                      <p class="mb-1 text-white">Produto</p>
+                    
                       <h4 class="mb-0 text-white">
                         Construção civil e paisagismo</h4>
                    </div>
@@ -403,8 +403,8 @@
                 <!-- Overlay Content -->
                 <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
                    <div>
-                      <p class="mb-1 text-white">Produto</p>
-                      <h4 class="mb-0 text-white">Fruticultura</h4>
+                    
+                      <h4 class="mb-0 text-white">Construções de estufa, área para fruticultura, etc</h4>
                    </div>
                    <!-- Badge -->
                    <span class="badge bg-success">Resistência</span>
