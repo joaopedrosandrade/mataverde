@@ -35,4 +35,9 @@ class FrontController extends Controller
     {
         return view('front.contato');
     }
+
+    public function qualidade()
+    {
+        return view('front.qualidade');
+    }
 }
