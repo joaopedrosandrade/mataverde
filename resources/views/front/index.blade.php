@@ -208,8 +208,237 @@
         height: 80px;
         margin: 0 auto;
     }
+ }
+
+/* Depoimentos para mobile - Layout vertical forçado */
+@media (max-width: 991px) {
+    .testimonial-section {
+        padding: 1.5rem 0;
+    }
+    
+    .testimonial-section .container {
+        padding: 0 1rem;
+    }
+    
+    .testimonial-section .testimonial-card {
+        background: white !important;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        padding: 1.25rem;
+        margin: 0.5rem;
+        display: block !important;
+        flex-direction: column !important;
+        min-height: auto;
+        position: relative;
+    }
+    
+    /* Forçar vídeo no topo para mobile */
+    .testimonial-card .testimonial-thumbnail.d-block {
+        width: 100% !important;
+        height: 140px !important;
+        margin-bottom: 1rem !important;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 2px solid #3CB371;
+        position: relative;
+        order: 1 !important;
+        display: block !important;
+    }
+    
+    /* Esconder vídeo do desktop no mobile */
+    .testimonial-card .testimonial-thumbnail.d-none {
+        display: none !important;
+    }
+    
+    .testimonial-card .testimonial-thumbnail-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .testimonial-card .testimonial-play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 50%;
+        border: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    
+    .testimonial-card .testimonial-play-btn:hover {
+        background: rgba(60, 179, 113, 0.9);
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+    
+    /* Conteúdo do depoimento abaixo do vídeo */
+    .testimonial-card .testimonial-content {
+        padding: 0 !important;
+        margin: 0 !important;
+        flex: 1;
+        text-align: center;
+        order: 2 !important;
+        width: 100% !important;
+        display: block !important;
+    }
+    
+    .testimonial-card .testimonial-content svg {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 0.75rem;
+    }
+    
+    .testimonial-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        color: #333;
+        text-align: left;
+        width: 100%;
+        word-wrap: break-word;
+    }
+    
+    .testimonial-content h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        color: #161920;
+    }
+    
+    .testimonial-content span {
+        font-size: 0.8rem;
+        color: #666;
+    }
+    
+    .border-top {
+        height: 1px;
+        background: linear-gradient(90deg, #3CB371, transparent);
+        margin: 0.75rem 0;
+        border: none;
+    }
+    
+    /* Indicador de vídeo */
+    .testimonial-card .testimonial-thumbnail.d-block::before {
+        content: '▶';
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 24px;
+        height: 24px;
+        background: rgba(60, 179, 113, 0.9);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 10px;
+        pointer-events: none;
+        z-index: 5;
+    }
+    
+    /* Garantir que todos os slides tenham o mesmo comportamento */
+    .swiper-slide.testimonial-card {
+        display: block !important;
+        flex-direction: column !important;
+    }
+    
+    .swiper-slide.testimonial-card.slide-expand {
+        display: block !important;
+        flex-direction: column !important;
+    }
 }
-</style>
+
+/* Específico para 375px */
+@media (max-width: 375px) {
+    .testimonial-section .container {
+        padding: 0 0.75rem;
+    }
+    
+    .testimonial-section .testimonial-card {
+        padding: 1rem;
+        margin: 0.25rem;
+        border-radius: 10px;
+    }
+    
+    .testimonial-card .testimonial-thumbnail.d-block {
+        height: 120px;
+        margin-bottom: 0.875rem;
+    }
+    
+    .testimonial-card .testimonial-play-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .testimonial-card .testimonial-content svg {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .testimonial-text {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 0.875rem;
+    }
+    
+    .testimonial-content h4 {
+        font-size: 0.95rem;
+    }
+    
+    .testimonial-content span {
+        font-size: 0.75rem;
+    }
+    
+    .border-top {
+        margin: 0.5rem 0;
+    }
+    
+    /* Indicador de vídeo menor */
+    .testimonial-card .testimonial-thumbnail.d-block::before {
+        width: 20px;
+        height: 20px;
+        font-size: 8px;
+        top: 6px;
+        right: 6px;
+    }
+}
+
+/* Para telas entre 376px e 576px */
+@media (min-width: 376px) and (max-width: 576px) {
+    .testimonial-card .testimonial-thumbnail.d-block {
+        height: 150px;
+    }
+    
+    .testimonial-card .testimonial-play-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-content h4 {
+        font-size: 1rem;
+    }
+    
+    .testimonial-content span {
+        font-size: 0.8rem;
+    }
+}
+ </style>
 
 <section class="hero-section bg-dark">
     <!-- Cloud Image -->
@@ -618,6 +847,17 @@
           <div class="swiper-wrapper">
              <!-- Testimonial Card -->
              <div class="swiper-slide testimonial-card slide-expand" style="background-image: url('assets/img/bg-img/24.jpg');">
+                <!-- Mobile: Vídeo primeiro -->
+                <div class="testimonial-thumbnail d-block d-lg-none">
+                   <video class="testimonial-thumbnail-video" autoplay muted loop>
+                      <source src="assets/video/dep1.mp4" type="video/mp4">
+                   </video>
+                   <!-- Play Button -->
+                   <button class="testimonial-play-btn" data-video="assets/video/dep1.mp4" type="button">
+                      <i class="ti ti-player-play-filled"></i>
+                   </button>
+                </div>
+
                 <!-- Testimonial Content -->
                 <div class="testimonial-content">
                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
@@ -631,8 +871,8 @@
                    <span> Casa da Lasca</span>
                 </div>
 
-                <!-- Testimonial Thumbnail -->
-                <div class="testimonial-thumbnail">
+                <!-- Desktop: Vídeo ao lado -->
+                <div class="testimonial-thumbnail d-none d-lg-block">
                    <video class="testimonial-thumbnail-video" autoplay muted loop>
                       <source src="assets/video/dep1.mp4" type="video/mp4">
                    </video>
@@ -644,7 +884,18 @@
              </div>
 
              <!-- Testimonial Card -->
-             <div class="swiper-slide testimonial-card" style="background-image: url('assets/img/bg-img/25.jpg');">
+             <div class="swiper-slide testimonial-card slide-expand" style="background-image: url('assets/img/bg-img/25.jpg');">
+                <!-- Mobile: Vídeo primeiro -->
+                <div class="testimonial-thumbnail d-block d-lg-none">
+                   <video class="testimonial-thumbnail-video" autoplay muted loop>
+                      <source src="assets/video/dep2.mp4" type="video/mp4">
+                   </video>
+                   <!-- Play Button -->
+                   <button class="testimonial-play-btn" data-video="assets/video/dep2.mp4" type="button">
+                      <i class="ti ti-player-play-filled"></i>
+                   </button>
+                </div>
+
                 <!-- Testimonial Content -->
                 <div class="testimonial-content">
                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
@@ -658,8 +909,8 @@
                    <span>Líder Ferro e Aço e Madeiras</span>
                 </div>
 
-                <!-- Testimonial Thumbnail -->
-                <div class="testimonial-thumbnail">
+                <!-- Desktop: Vídeo ao lado -->
+                <div class="testimonial-thumbnail d-none d-lg-block">
                    <video class="testimonial-thumbnail-video" autoplay muted loop>
                       <source src="assets/video/dep2.mp4" type="video/mp4">
                    </video>
@@ -948,28 +1199,86 @@ document.addEventListener('DOMContentLoaded', function() {
    
    const modal = new bootstrap.Modal(modalElement);
    
-    // Adicionar event listeners para os botões de play dos depoimentos
-    const testimonialPlayButtons = document.querySelectorAll('.testimonial-play-btn');
-    console.log('Botões de depoimento encontrados:', testimonialPlayButtons.length);
-    
-    testimonialPlayButtons.forEach((btn, index) => {
-       console.log('Adicionando listener ao botão de depoimento', index);
-       btn.addEventListener('click', function(e) {
-          e.preventDefault();
-          e.stopPropagation();
-          
-          const videoSrc = this.getAttribute('data-video');
-          console.log('Clicou no botão de depoimento, vídeo:', videoSrc);
-          
-          if (videoSrc) {
-             videoSource.src = videoSrc;
-             video.load();
-             modal.show();
-          } else {
-             console.error('Atributo data-video não encontrado');
-          }
-       });
-    });
+   // Adicionar event listeners para os botões de play dos depoimentos
+   const testimonialPlayButtons = document.querySelectorAll('.testimonial-play-btn');
+   console.log('Botões de depoimento encontrados:', testimonialPlayButtons.length);
+   
+   testimonialPlayButtons.forEach((btn, index) => {
+      console.log('Adicionando listener ao botão de depoimento', index);
+      btn.addEventListener('click', function(e) {
+         e.preventDefault();
+         e.stopPropagation();
+         
+         const videoSrc = this.getAttribute('data-video');
+         console.log('Clicou no botão de depoimento, vídeo:', videoSrc);
+         
+         if (videoSrc) {
+            videoSource.src = videoSrc;
+            video.load();
+            modal.show();
+         } else {
+            console.error('Atributo data-video não encontrado');
+         }
+      });
+   });
+   
+   // Forçar layout vertical no mobile
+   function forceMobileLayout() {
+      if (window.innerWidth <= 991) {
+         const cards = document.querySelectorAll('.swiper-slide.testimonial-card');
+         console.log('Forçando layout para', cards.length, 'cards');
+         
+         cards.forEach((card, index) => {
+            console.log('Processando card', index);
+            
+            // Forçar display block
+            card.style.display = 'block';
+            card.style.flexDirection = 'column';
+            card.style.width = '100%';
+            
+            // Mostrar vídeo mobile, esconder desktop
+            const mobileVideo = card.querySelector('.testimonial-thumbnail.d-block');
+            const desktopVideo = card.querySelector('.testimonial-thumbnail.d-none');
+            
+            if (mobileVideo) {
+               mobileVideo.style.display = 'block';
+               mobileVideo.style.order = '1';
+               mobileVideo.style.width = '100%';
+               console.log('Vídeo mobile configurado para card', index);
+            }
+            
+            if (desktopVideo) {
+               desktopVideo.style.display = 'none';
+            }
+            
+            // Conteúdo sempre abaixo
+            const content = card.querySelector('.testimonial-content');
+            if (content) {
+               content.style.order = '2';
+               content.style.width = '100%';
+               content.style.display = 'block';
+               content.style.padding = '0';
+               content.style.margin = '0';
+               console.log('Conteúdo configurado para card', index);
+            }
+         });
+      }
+   }
+   
+   // Executar na carga e no resize
+   forceMobileLayout();
+   window.addEventListener('resize', forceMobileLayout);
+   
+   // Aplicar layout quando o slide do Swiper mudar
+   setTimeout(() => {
+      const swiperContainer = document.querySelector('.testimonial-swiper');
+      if (swiperContainer && swiperContainer.swiper) {
+         swiperContainer.swiper.on('slideChange', function() {
+            console.log('Slide mudou, aplicando layout');
+            setTimeout(forceMobileLayout, 100);
+         });
+      }
+   }, 1000);
     
     // Adicionar event listeners para o botão de play da seção About
     const aboutPlayButton = document.querySelector('.about-play-btn');
