@@ -140,6 +140,75 @@
     object-fit: cover;
     z-index: 1;
 }
+
+/* Melhorias para mobile na seção About */
+@media (max-width: 768px) {
+    .about-company-section .about-thumbnail {
+        margin-bottom: 2rem;
+    }
+    
+    .about-company-section .about-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    /* Reduzir altura do vídeo no mobile */
+    .second-img {
+        height: 200px !important;
+        min-height: 200px !important;
+    }
+    
+    /* Garantir que o vídeo não sobreponha o conteúdo */
+    .about-company-section .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    /* Ajustar espaçamento dos processos no mobile */
+    .process-step {
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .process-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .process-content h5 {
+        font-size: 1rem;
+    }
+    
+    .process-content p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes adicionais para telas muito pequenas */
+    .second-img {
+        height: 150px !important;
+        min-height: 150px !important;
+    }
+    
+    .about-play-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .process-step {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem !important;
+    }
+    
+    .process-image {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+}
 </style>
 
 <section class="hero-section bg-dark">
@@ -236,7 +305,7 @@
     <div class="container">
        <div class="row g-5 align-items-center">
           <!-- About Thumbnail -->
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
              <div class="about-thumbnail">
                 <!-- Shape -->
                 <div class="shape wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
@@ -268,7 +337,7 @@
           </div>
 
            <!-- About Content -->
-           <div class="col-12 col-lg-6">
+           <div class="col-12 col-lg-6 order-1 order-lg-2">
               <div class="about-content ps-md-5">
                  <div class="section-heading">
                     <span class="sub-title text-success ff-montez">O que fazemos</span>
