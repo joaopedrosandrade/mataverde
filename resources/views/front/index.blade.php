@@ -184,11 +184,13 @@
   height:100%;
   object-fit:cover;
   display:block;
+  pointer-events:none;
 }
 .video-thumb video{
   width:100%;
   height:100%;
   object-fit:cover;
+  pointer-events:none;
 }
 .video-overlay{
   position:absolute;
@@ -223,6 +225,7 @@
   border:0;
   background:transparent;
   cursor:pointer;
+  z-index:10;
 }
 .video-button:hover + .video-overlay{ background:linear-gradient(0deg,rgba(0,0,0,.45),rgba(0,0,0,.25)) }
 .video-button:hover + .video-overlay .play{ transform:scale(1.05) }
