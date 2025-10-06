@@ -141,73 +141,181 @@
     z-index: 1;
 }
 
-/* Melhorias para mobile na seção About */
-@media (max-width: 768px) {
-    .about-company-section .about-thumbnail {
-        margin-bottom: 2rem;
-    }
-    
-    .about-company-section .about-content {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    
-    /* Reduzir altura do vídeo no mobile */
-    .second-img {
-        height: 200px !important;
-        min-height: 200px !important;
-    }
-    
-    /* Garantir que o vídeo não sobreponha o conteúdo */
-    .about-company-section .container {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    
-    /* Ajustar espaçamento dos processos no mobile */
-    .process-step {
-        padding: 0.75rem;
-        margin-bottom: 1rem;
-    }
-    
-    .process-image {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .process-content h5 {
-        font-size: 1rem;
-    }
-    
-    .process-content p {
-        font-size: 0.85rem;
-    }
+/* Mobile Testimonial Styles */
+:root{
+  --bg:#ffffff;          /* Fundo branco */
+  --card:#f8f8f8;        /* Card levemente cinza para destacar do fundo */
+  --text:#333333;        /* Texto principal em tom escuro */
+  --muted:#666666;       /* Texto secundário */
+  --accent:#3CB371;      /* Verde solicitado */
+  --radius:16px;
 }
 
-@media (max-width: 576px) {
-    /* Ajustes adicionais para telas muito pequenas */
-    .second-img {
-        height: 150px !important;
-        min-height: 150px !important;
-    }
-    
-    .about-play-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-    }
-    
-    .process-step {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem !important;
-    }
-    
-    .process-image {
-        width: 80px;
-        height: 80px;
-        margin: 0 auto;
-    }
+.wrap{max-width:1024px;margin:auto;padding:48px 20px}
+.testimonial{
+  display:grid;
+  gap:28px;
+  align-items:center;
+  grid-template-columns: 1fr; /* mobile */
+  background:var(--bg);
+  border:1px solid #e0e0e0;
+  border-radius:var(--radius);
+  padding:20px;
+}
+@media(min-width:900px){
+  .testimonial{
+    grid-template-columns: 1.2fr 1fr;
+    padding:28px;
+  }
+}
+
+/* Card de vídeo */
+.video-card{
+  position:relative;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--card);
+  aspect-ratio:16/9;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+  border:1px solid #ddd;
+}
+.video-thumb{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.video-thumb video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.video-overlay{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(0deg,rgba(0,0,0,.35),rgba(0,0,0,.15));
+  transition:background .25s ease, transform .25s ease;
+}
+.play{
+  width:72px;
+  height:72px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--accent);
+  box-shadow:0 8px 18px rgba(0,0,0,.25);
+  transition:transform .2s ease;
+}
+.play:before{
+  content:"";
+  display:block;
+  width:0; height:0; margin-left:4px;
+  border-left:20px solid #fff;
+  border-top:12px solid transparent;
+  border-bottom:12px solid transparent;
+}
+.video-button{
+  position:absolute;
+  inset:0;
+  display:block;
+  border:0;
+  background:transparent;
+  cursor:pointer;
+}
+.video-button:hover + .video-overlay{ background:linear-gradient(0deg,rgba(0,0,0,.45),rgba(0,0,0,.25)) }
+.video-button:hover + .video-overlay .play{ transform:scale(1.05) }
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+/* Texto do depoimento */
+.content{padding:4px 6px}
+.quote{font-size:1.125rem}
+.quote strong{color:var(--accent)}
+blockquote{margin:0}
+.client{
+  margin-top:18px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.avatar{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  object-fit:cover;
+  border:1px solid #ddd;
+}
+.name{font-weight:700}
+.role{color:var(--muted); font-size:.95rem}
+.accent{color:var(--accent)}
+.player{position:absolute; inset:0; width:100%; height:100%; border:0}
+
+/* Mobile Navigation Styles */
+.mobile-testimonial-nav{
+  margin-bottom:24px;
+}
+.mobile-nav-btn{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:1px solid var(--accent);
+  background:transparent;
+  color:var(--accent);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:all .3s ease;
+}
+.mobile-nav-btn:hover{
+  background:var(--accent);
+  color:white;
+  transform:scale(1.05);
+}
+.mobile-nav-btn:disabled{
+  opacity:.5;
+  cursor:not-allowed;
+  transform:none;
+}
+.nav-dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:#ddd;
+  cursor:pointer;
+  transition:all .3s ease;
+}
+.nav-dot.active{
+  background:var(--accent);
+  transform:scale(1.2);
+}
+.nav-dot:hover{
+  background:var(--accent);
+  opacity:.7;
+}
+
+/* Mobile Testimonial Slides */
+.mobile-testimonial-slide{
+  display:none;
+  animation:fadeIn 0.5s ease-in-out;
+}
+.mobile-testimonial-slide.active{
+  display:block;
+}
+@keyframes fadeIn{
+  from{opacity:0; transform:translateX(20px)}
+  to{opacity:1; transform:translateX(0)}
 }
 </style>
 
@@ -601,7 +709,7 @@
           </div>
 
           <div class="col-12 col-sm-6">
-             <div class="testimonial-navigation-container justify-content-sm-end">
+             <div class="testimonial-navigation-container justify-content-sm-end d-none d-md-flex">
                 <div class="testimonial-button-prev">
                    <i class="ti ti-chevron-left"></i>
                 </div>
@@ -612,9 +720,10 @@
           </div>
        </div>
 
-       <div class="divider-sm"></div>
+       <div class="divider-sm d-none d-md-block"></div>
 
-       <div class="swiper testimonial-swiper">
+       <!-- Desktop Testimonial Swiper (hidden on mobile) -->
+       <div class="swiper testimonial-swiper d-none d-md-block">
           <div class="swiper-wrapper">
              <!-- Testimonial Card -->
              <div class="swiper-slide testimonial-card slide-expand" style="background-image: url('assets/img/bg-img/24.jpg');">
@@ -669,8 +778,89 @@
                    </button>
                 </div>
              </div>
+          </div>
+       </div>
 
-           
+       <!-- Mobile Testimonial (visible only on mobile) -->
+       <div class="d-md-none">
+          <div class="wrap">
+             <!-- Mobile Navigation -->
+             <div class="mobile-testimonial-nav d-flex justify-content-center align-items-center gap-3 mb-4">
+                <button class="mobile-nav-btn" id="mobilePrevBtn" aria-label="Depoimento anterior">
+                   <i class="ti ti-chevron-left"></i>
+                </button>
+                <div class="mobile-nav-dots d-flex gap-2">
+                   <span class="nav-dot active" data-slide="0"></span>
+                   <span class="nav-dot" data-slide="1"></span>
+                </div>
+                <button class="mobile-nav-btn" id="mobileNextBtn" aria-label="Próximo depoimento">
+                   <i class="ti ti-chevron-right"></i>
+                </button>
+             </div>
+
+             <!-- Testimonial 1 -->
+             <section class="testimonial mobile-testimonial-slide active" aria-labelledby="dep-title" data-slide="0">
+                <!-- Lado do vídeo -->
+                <figure class="video-card" data-video-type="video" data-video-src="assets/video/dep1.mp4">
+                   <button class="video-button" aria-label="Reproduzir depoimento em vídeo">
+                      <span class="sr-only">Reproduzir vídeo</span>
+                   </button>
+                   <video class="video-thumb" autoplay muted loop>
+                      <source src="assets/video/dep1.mp4" type="video/mp4">
+                   </video>
+                   <div class="video-overlay">
+                      <div class="play" aria-hidden="true"></div>
+                   </div>
+                   <figcaption class="sr-only">Depoimento em vídeo</figcaption>
+                </figure>
+
+                <!-- Lado do texto -->
+                <div class="content">
+                   <blockquote class="quote">
+                      <p>
+                         "A parceria de cinco anos com a Mata Verde demonstra que a empresa é <strong>sucesso quando o assunto é eucalipto</strong>"
+                      </p>
+                   </blockquote>
+                   <div class="client">
+                      <div>
+                         <div class="name">Valentina <span class="accent">•</span> Casa da Lasca</div>
+                         <div class="role">Parceria de 5 anos</div>
+                      </div>
+                   </div>
+                </div>
+             </section>
+
+             <!-- Testimonial 2 -->
+             <section class="testimonial mobile-testimonial-slide" aria-labelledby="dep-title" data-slide="1">
+                <!-- Lado do vídeo -->
+                <figure class="video-card" data-video-type="video" data-video-src="assets/video/dep2.mp4">
+                   <button class="video-button" aria-label="Reproduzir depoimento em vídeo">
+                      <span class="sr-only">Reproduzir vídeo</span>
+                   </button>
+                   <video class="video-thumb" autoplay muted loop>
+                      <source src="assets/video/dep2.mp4" type="video/mp4">
+                   </video>
+                   <div class="video-overlay">
+                      <div class="play" aria-hidden="true"></div>
+                   </div>
+                   <figcaption class="sr-only">Depoimento em vídeo</figcaption>
+                </figure>
+
+                <!-- Lado do texto -->
+                <div class="content">
+                   <blockquote class="quote">
+                      <p>
+                         "Trabalho desde 2004 com a Mata Verde e sempre tive uma <strong>parceria de sucesso</strong>"
+                      </p>
+                   </blockquote>
+                   <div class="client">
+                      <div>
+                         <div class="name">Adeberbal Marciel <span class="accent">•</span> Líder Ferro e Aço e Madeiras</div>
+                         <div class="role">Parceria desde 2004</div>
+                      </div>
+                   </div>
+                </div>
+             </section>
           </div>
        </div>
     </div>
@@ -970,6 +1160,93 @@ document.addEventListener('DOMContentLoaded', function() {
           }
        });
     });
+    
+    // Adicionar event listeners para os botões de vídeo mobile
+    const mobileVideoButtons = document.querySelectorAll('.video-button');
+    console.log('Botões de vídeo mobile encontrados:', mobileVideoButtons.length);
+    
+    mobileVideoButtons.forEach((btn, index) => {
+       console.log('Adicionando listener ao botão de vídeo mobile', index);
+       btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          const videoCard = this.closest('.video-card');
+          const videoSrc = videoCard.getAttribute('data-video-src');
+          console.log('Clicou no botão de vídeo mobile, vídeo:', videoSrc);
+          
+          if (videoSrc) {
+             videoSource.src = videoSrc;
+             video.load();
+             modal.show();
+          } else {
+             console.error('Atributo data-video-src não encontrado');
+          }
+       });
+    });
+    
+    // Mobile Testimonial Navigation
+    let currentMobileSlide = 0;
+    const mobileSlides = document.querySelectorAll('.mobile-testimonial-slide');
+    const mobileNavDots = document.querySelectorAll('.nav-dot');
+    const mobilePrevBtn = document.getElementById('mobilePrevBtn');
+    const mobileNextBtn = document.getElementById('mobileNextBtn');
+    
+    function showMobileSlide(index) {
+       // Remove active class from all slides
+       mobileSlides.forEach(slide => slide.classList.remove('active'));
+       mobileNavDots.forEach(dot => dot.classList.remove('active'));
+       
+       // Add active class to current slide and dot
+       if (mobileSlides[index]) {
+          mobileSlides[index].classList.add('active');
+       }
+       if (mobileNavDots[index]) {
+          mobileNavDots[index].classList.add('active');
+       }
+       
+       // Update button states
+       if (mobilePrevBtn && mobileNextBtn) {
+          mobilePrevBtn.disabled = index === 0;
+          mobileNextBtn.disabled = index === mobileSlides.length - 1;
+       }
+    }
+    
+    function nextMobileSlide() {
+       if (currentMobileSlide < mobileSlides.length - 1) {
+          currentMobileSlide++;
+          showMobileSlide(currentMobileSlide);
+       }
+    }
+    
+    function prevMobileSlide() {
+       if (currentMobileSlide > 0) {
+          currentMobileSlide--;
+          showMobileSlide(currentMobileSlide);
+       }
+    }
+    
+    // Event listeners for mobile navigation
+    if (mobileNextBtn) {
+       mobileNextBtn.addEventListener('click', nextMobileSlide);
+    }
+    
+    if (mobilePrevBtn) {
+       mobilePrevBtn.addEventListener('click', prevMobileSlide);
+    }
+    
+    // Event listeners for dots
+    mobileNavDots.forEach((dot, index) => {
+       dot.addEventListener('click', () => {
+          currentMobileSlide = index;
+          showMobileSlide(currentMobileSlide);
+       });
+    });
+    
+    // Initialize mobile navigation
+    if (mobileSlides.length > 0) {
+       showMobileSlide(0);
+    }
     
     // Adicionar event listeners para o botão de play da seção About
     const aboutPlayButton = document.querySelector('.about-play-btn');
