@@ -131,6 +131,15 @@
     min-height: 200px;
 }
 
+/* Mobile adjustments for about video */
+@media (max-width: 767.98px) {
+    .second-img {
+        height: auto;
+        aspect-ratio: 4/3;
+        min-height: auto;
+    }
+}
+
 .about-background-video {
     position: absolute;
     top: 0;
@@ -428,7 +437,7 @@ blockquote{margin:0}
                    <img src="assets/img/bg-img/7.jpg" alt="">
                 </div>
 
-                 <!-- Second Image -->
+                 <!-- Second Image (Video) -->
                  <div class="second-img wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
                     <video class="about-background-video" autoplay muted loop>
                        <source src="assets/video/sobre.mp4" type="video/mp4">
@@ -440,8 +449,8 @@ blockquote{margin:0}
                     </button>
                  </div>
 
-                <!-- Third Image -->
-                <div class="third-img wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1000ms">
+                <!-- Third Image (Truck) -->
+                <div class="third-img wow fadeInUp d-none d-md-block" data-wow-delay="800ms" data-wow-duration="1000ms">
                    <img src="assets/img/bg-img/9.jpg" alt="">
                 </div>
              </div>
