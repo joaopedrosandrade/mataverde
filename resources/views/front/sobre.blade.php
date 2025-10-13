@@ -83,7 +83,7 @@
                   <i class="ti ti-eye text-success" style="font-size: 3rem;"></i>
                </div>
                <h5>Visão</h5>
-               <p class="mb-0">Assegurar o crescimento do grupo familiar com solidez, ética e garantia dos seus produtos, buscando sempre reconhecimento como referencia de eucalipto tratado e responsabilidade social e ambiental.</p>
+               <p class="mb-0">Assegurar o crescimento do grupo familiar com solidez, ética e garantia dos seus produtos, buscando sempre reconhecimento como referência de eucalipto tratado e responsabilidade social e ambiental.</p>
             </div>
          </div>
          
@@ -117,7 +117,7 @@
                   </div>
                   <div class="timeline-content">
                      <h5>O Início</h5>
-                     <p>O jovem <strong>Luis Ferreira de Moraes</strong> sai da cidade de Penedo, Alagoas, para se instalar na cidade de São Paulo. Funda, com o irmão <strong>Domingos Moraes</strong>, a indústria de alumínios <strong>Penedo</strong>.</p>
+                     <p>O jovem <strong>Luiz Ferreira de Moraes</strong> deixa sua cidade natal, <strong>Penedo (AL)</strong>, e parte rumo a São Paulo, onde funda, junto ao irmão <strong>Domingos Ferreira de Moraes</strong>, a indústria de alumínios <strong>Penedo</strong>.</p>
                   </div>
                </div>
                
@@ -127,7 +127,7 @@
                   </div>
                   <div class="timeline-content">
                      <h5>Expansão para Minas Gerais</h5>
-                     <p>Inaugurada uma unidade do grupo em Contagem, <strong>Minas Gerais</strong>; fazendo com que <strong>Luis Moraes</strong>, esposa e os dois filhos mudem para este estado. Neste mesmo ano, adquire a primeira fazenda em Minas.</p>
+                     <p>É inaugurada uma nova unidade do grupo em <strong>Contagem (MG)</strong>, o que leva Luiz, sua esposa e os dois filhos a se mudarem definitivamente para o estado. Neste mesmo ano, é adquirida a primeira fazenda em solo mineiro, marcando o início de uma nova fase da família Moraes.</p>
                   </div>
                </div>
                
@@ -137,7 +137,7 @@
                   </div>
                   <div class="timeline-content">
                      <h5>Transição Agropecuária</h5>
-                     <p>Afasta-se da indústria e dedica-se ao ramo agropecuário.</p>
+                     <p>Luiz vende sua participação na indústria e passa a se dedicar integralmente ao setor agropecuário, consolidando a atuação familiar no campo.</p>
                   </div>
                </div>
                
@@ -147,7 +147,7 @@
                   </div>
                   <div class="timeline-content">
                      <h5>Formação em Agronomia</h5>
-                     <p>O filho mais velho, <strong>Luis Norberto</strong>, forma-se em agronomia e inicia-se no ramo da cafeicultura e pecuária leiteira.</p>
+                     <p>O filho mais velho, <strong>Luiz Norberto</strong>, forma-se em Agronomia e dá início a uma trajetória voltada para a cafeicultura e a pecuária leiteira.</p>
                   </div>
                </div>
                
@@ -157,7 +157,7 @@
                   </div>
                   <div class="timeline-content">
                      <h5>Administração de Empresas</h5>
-                     <p>O irmão <strong>Paulo Moraes</strong> forma-se em administração de empresas e começa a trabalhar no ramo de pecuária de corte, fazendo recria, engorda e confinamento.</p>
+                     <p>O irmão <strong>Paulo Moraes</strong> conclui o curso de Administração de Empresas e direciona seus esforços ao rebanho de corte, atuando em recria, engorda e confinamento.</p>
                   </div>
                </div>
                
@@ -167,7 +167,7 @@
                   </div>
                   <div class="timeline-content">
                      <h5>Minas Energética</h5>
-                     <p>O grupo adquire a empresa <strong>Minas Energética</strong>, que possui fazendas de reflorestamento, mudando então a razão social para <strong>Agropecuária Penedo</strong>. A partir desse ano iniciou-se o plantio de espécies recomendadas para o tratamento.</p>
+                     <p>O grupo adquire a empresa <strong>Minas Energética</strong>, detentora de fazendas de reflorestamento, e altera sua razão social para <strong>Agropecuária Penedo</strong>. A partir desse momento, inicia-se o plantio de espécies de eucalipto indicadas para o tratamento e uso comercial.</p>
                   </div>
                </div>
                
@@ -177,27 +177,47 @@
                   </div>
                   <div class="timeline-content">
                      <h5>Nascimento da Madeiras Mata Verde</h5>
-                     <p>Fundada a <strong>Madeiras Mata Verde</strong> com a finalidade de beneficiar a madeira produzida em suas florestas com o objetivo de atender o mercado regional.</p>
+                     <p>É fundada a <strong>Madeiras Mata Verde</strong>, com o propósito de beneficiar o eucalipto produzido em suas próprias florestas e atender o mercado nacional com excelência e sustentabilidade.</p>
                   </div>
                </div>
                
                <div class="timeline-item">
                   <div class="timeline-marker">
-                     <span class="year">2012</span>
+                     <span class="year">2021</span>
                   </div>
                   <div class="timeline-content">
-                     <h5>Marcenaria</h5>
-                     <p>Instalada uma marcenaria com o intuito de produzir moveis rústicos, porteiras e diversos objetos de decoração.</p>
+                     <h5>Novo Parque Industrial</h5>
+                     <p>Tem início a construção do novo parque industrial da <strong>Mata Verde</strong>, estrategicamente localizado às margens da <strong>BR-494</strong>, ampliando a capacidade produtiva e modernizando os processos.</p>
                   </div>
                </div>
                
                <div class="timeline-item">
                   <div class="timeline-marker">
-                     <span class="year">2013</span>
+                     <span class="year">2023</span>
                   </div>
                   <div class="timeline-content">
-                     <h5>Tratamento de Pinus</h5>
-                     <p>Início do tratamento de <em>Pinus Elliottii</em> utilizado para decks, assoalhos, forros e outros.</p>
+                     <h5>Operação do Novo Parque</h5>
+                     <p>O novo parque industrial entra em operação, marcando um avanço significativo na eficiência e na tecnologia aplicada ao tratamento do eucalipto.</p>
+                  </div>
+               </div>
+               
+               <div class="timeline-item">
+                  <div class="timeline-marker">
+                     <span class="year">2024</span>
+                  </div>
+                  <div class="timeline-content">
+                     <h5>Laboratório de Análises</h5>
+                     <p>É criado o laboratório de análises de tratamento da madeira, onde são realizadas medições e laudos de qualidade que garantem a durabilidade e a confiabilidade do eucalipto Mata Verde para os clientes.</p>
+                  </div>
+               </div>
+               
+               <div class="timeline-item">
+                  <div class="timeline-marker">
+                     <span class="year">2025</span>
+                  </div>
+                  <div class="timeline-content">
+                     <h5>Modernização e Capacidade</h5>
+                     <p>A Mata Verde implementa importantes melhorias no processo produtivo, com a modernização de equipamentos e adoção de novas tecnologias, resultando em um aumento de <strong>50%</strong> na capacidade de produção. Tudo isso com um propósito claro: ampliar a produtividade sem abrir mão da qualidade que sempre foi marca da empresa.</p>
                   </div>
                </div>
                
@@ -207,7 +227,7 @@
                   </div>
                   <div class="timeline-content">
                      <h5>Atuação Nacional</h5>
-                     <p>A <strong>Madeiras Mata Verde</strong> atua em todo o território nacional.</p>
+                     <p>A <strong>Mata Verde</strong> consolida sua atuação em todo o território nacional, com clientes recorrentes em <strong>24 estados do Brasil</strong> e participação em grandes projetos de resorts de luxo, construções de casas de alto padrão, construções rurais, empreendimentos agrícolas e obras de fruticultura. Com um dos maiores e mais tecnológicos parques industriais do Brasil no segmento de eucalipto tratado, a empresa reforça sua posição como referência em qualidade e inovação no setor.</p>
                   </div>
                </div>
             </div>
@@ -251,7 +271,7 @@
                   <i class="ti ti-mail text-success" style="font-size: 3rem;"></i>
                </div>
                <h5>E-mail</h5>
-               <p class="mb-0">contato@madeirasmataverde.com.br</p>
+               <p class="mb-0">contato@madeirasMata Verde.com.br</p>
             </div>
          </div>
          

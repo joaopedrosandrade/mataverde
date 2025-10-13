@@ -203,7 +203,7 @@
                   </h2>
                   <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
                      <div class="accordion-body">
-                        Oferecemos eucalipto tratado com CCA em autoclave através do processo de vácuo-pressão, além de Pinus Elliottii para decks, assoalhos e forros. Todos os produtos passam por rigoroso controle de qualidade.
+                        Oferecemos eucalipto tratado com CCA em autoclave através do processo de vácuo-pressão, para decks, assoalhos e forros. Todos os produtos passam por rigoroso controle de qualidade.
                      </div>
                   </div>
                </div>
