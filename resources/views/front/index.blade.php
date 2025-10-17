@@ -433,7 +433,7 @@ blockquote{margin:0}
                 </div>
 
                 <!-- First Image -->
-                <div class="first-img wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+                <div class="first-img wow fadeInUp d-none d-md-block" data-wow-delay="400ms" data-wow-duration="1000ms">
                    <img src="assets/img/bg-img/7.jpg" alt="">
                 </div>
 
