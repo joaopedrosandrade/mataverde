@@ -30,12 +30,7 @@
 
                   <!-- Overlay Content -->
                   <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
-                     <div>
-                        <p class="mb-1 text-white">Produto</p>
-                        <h4 class="mb-0 text-white">Postes de Eucalipto</h4>
-                     </div>
-                     <!-- Badge -->
-                     <span class="badge bg-success">Tratados</span>
+                    
                   </div>
                </div>
             </div>
@@ -47,12 +42,7 @@
 
                   <!-- Overlay Content -->
                   <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
-                     <div>
-                        <p class="mb-1 text-white">Produto</p>
-                        <h4 class="mb-0 text-white">Dormentes</h4>
-                     </div>
-                     <!-- Badge -->
-                     <span class="badge bg-success">Tratados</span>
+                    
                   </div>
                </div>
             </div>
@@ -64,12 +54,7 @@
 
                   <!-- Overlay Content -->
                   <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
-                     <div>
-                        <p class="mb-1 text-white">Produto</p>
-                        <h4 class="mb-0 text-white">Madeiras para Construção</h4>
-                     </div>
-                     <!-- Badge -->
-                     <span class="badge bg-success">Tratados</span>
+                    
                   </div>
                </div>
             </div>
@@ -81,12 +66,7 @@
 
                   <!-- Overlay Content -->
                   <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
-                     <div>
-                        <p class="mb-1 text-white">Produto</p>
-                        <h4 class="mb-0 text-white">Madeiras para Eletrificação</h4>
-                     </div>
-                     <!-- Badge -->
-                     <span class="badge bg-success">Tratados</span>
+                     
                   </div>
                </div>
             </div>
@@ -98,12 +78,7 @@
 
                   <!-- Overlay Content -->
                   <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
-                     <div>
-                        <p class="mb-1 text-white">Produto</p>
-                        <h4 class="mb-0 text-white">Madeiras para Telefonia</h4>
-                     </div>
-                     <!-- Badge -->
-                     <span class="badge bg-success">Tratados</span>
+                     
                   </div>
                </div>
             </div>
@@ -115,12 +90,7 @@
 
                   <!-- Overlay Content -->
                   <div class="overlay-content d-flex flex-wrap gap-4 align-items-end justify-content-between">
-                     <div>
-                        <p class="mb-1 text-white">Produto</p>
-                        <h4 class="mb-0 text-white">Madeiras para Meio Rural</h4>
-                     </div>
-                     <!-- Badge -->
-                     <span class="badge bg-success">Tratados</span>
+                    
                   </div>
                </div>
             </div>
