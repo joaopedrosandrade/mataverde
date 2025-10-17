@@ -223,7 +223,7 @@
                
                <div class="timeline-item">
                   <div class="timeline-marker">
-                     <span class="year">Atualmente</span>
+                     <span class="year">Atual</span>
                   </div>
                   <div class="timeline-content">
                      <h5>Atuação Nacional</h5>

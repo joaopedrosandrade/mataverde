@@ -8,10 +8,10 @@
          <!-- Breadcrumb Content -->
          <div class="breadcrumb-content">
             <div class="divider"></div>
-            <h2>Nossos Produtos</h2>
+            <h2>Aplicabilidades</h2>
             <ul class="list-unstyled">
                <li><a href="{{route('front.index')}}">Início</a></li>
-               <li>Produtos</li>
+               <li>Aplicabilidades</li>
             </ul>
          </div>
       </div>
