@@ -125,10 +125,10 @@
                      <a href="{{route('front.index')}}">Inicio</a>
                   </li>
                   <li>
-                     <a href="{{route('front.sobre')}}">Aplicabilidades</a>
+                     <a href="{{route('front.sobre')}}">Sobre</a>
                   </li>
                   <li>
-                     <a href="{{route('front.produtos')}}">Produtos</a>
+                     <a href="{{route('front.produtos')}}">Aplicabilidades</a>
                   </li>
                   <li>
                      <a href="{{route('front.qualidade')}}">Qualidade</a>
