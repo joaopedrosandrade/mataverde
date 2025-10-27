@@ -28,12 +28,14 @@ Route::get('/contato', 'FrontController@contato')->name('front.contato');
 
 // Rotas do Front
 Route::post('/orcamento/store', 'FrontController@storeQuotation')->name('front.orcamento.store');
+Route::post('/representante/store', 'FrontController@storeRepresentant')->name('front.representante.store');
 
 // Rotas administrativas
 Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', 'Admin\AdminController@index')->name('dashboard');
     Route::get('quotations/unread-count', 'Admin\QuotationController@unreadCount')->name('quotations.unreadCount');
     Route::resource('quotations', 'Admin\QuotationController')->only(['index', 'show', 'destroy']);
+    Route::resource('representants', 'Admin\RepresentantController')->only(['index', 'show', 'destroy']);
     Route::resource('testimonials', 'Admin\TestimonialController')->except(['show']);
     Route::resource('products', 'Admin\ProductController')->except(['show']);
 });

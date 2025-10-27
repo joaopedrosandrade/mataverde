@@ -72,6 +72,12 @@
                                 <span class="badge bg-danger ms-1">{{ \App\Quotation::where('is_read', false)->count() }}</span>
                             @endif
                         </a>
+                        <a class="nav-link {{ request()->routeIs('admin.representants.*') ? 'active' : '' }}" href="{{ route('admin.representants.index') }}">
+                            <i class="fas fa-users me-2"></i> Representantes
+                            @if(\App\Representant::where('is_read', false)->count() > 0)
+                                <span class="badge bg-danger ms-1">{{ \App\Representant::where('is_read', false)->count() }}</span>
+                            @endif
+                        </a>
                         <a class="nav-link {{ request()->routeIs('admin.products.*') ? 'active' : '' }}" href="{{ route('admin.products.index') }}">
                             <i class="fas fa-box me-2"></i> Produtos
                         </a>
