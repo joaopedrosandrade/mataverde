@@ -144,6 +144,12 @@
                                 <span class="badge bg-danger ms-1">{{ \App\Representant::where('is_read', false)->count() }}</span>
                             @endif
                         </a>
+                        <a class="nav-link {{ request()->routeIs('admin.contacts.*') ? 'active' : '' }}" href="{{ route('admin.contacts.index') }}">
+                            <i class="fas fa-envelope me-2"></i> Contatos
+                            @if(\App\Contact::where('is_read', false)->count() > 0)
+                                <span class="badge bg-danger ms-1">{{ \App\Contact::where('is_read', false)->count() }}</span>
+                            @endif
+                        </a>
                         <a class="nav-link {{ request()->routeIs('admin.products.*') ? 'active' : '' }}" href="{{ route('admin.products.index') }}">
                             <i class="fas fa-box me-2"></i> Produtos
                         </a>

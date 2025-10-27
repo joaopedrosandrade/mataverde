@@ -30,7 +30,15 @@
          
          <div class="col-12 col-lg-8 mx-auto">
             <div class="feature-card">
-               <form class="contact-form" method="POST" action="#">
+               @if(session('success'))
+               <div class="alert alert-success alert-dismissible fade show" role="alert">
+                  <strong>Sucesso!</strong> {{ session('success') }}
+                  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+               </div>
+               @endif
+               
+               <form class="contact-form" method="POST" action="{{ route('front.contato.store') }}">
+                  @csrf
                   <div class="row g-3">
                      <div class="col-12 col-md-6">
                         <div class="form-group">
@@ -41,7 +49,7 @@
                      <div class="col-12 col-md-6">
                         <div class="form-group">
                            <label for="telefone" class="form-label">Telefone/WhatsApp *</label>
-                           <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                           <input type="tel" class="form-control" id="telefone-contact" name="telefone" required>
                         </div>
                      </div>
                      <div class="col-12 col-md-6">
@@ -89,6 +97,45 @@
          </div>
       </div>
    </div>
+
+<style>
+    .feature-card .form-control {
+        line-height: 1.5 !important;
+        padding: 12px 15px !important;
+        font-size: 14px !important;
+    }
+    
+    .feature-card .form-control::placeholder {
+        line-height: 1.5 !important;
+        overflow: visible !important;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const telefoneInput = document.getElementById('telefone-contact');
+        
+        if (telefoneInput) {
+            telefoneInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                
+                if (value.length > 11) {
+                    value = value.substring(0, 11);
+                }
+                
+                if (value.length <= 11) {
+                    if (value.length <= 10) {
+                        value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+                    } else {
+                        value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+                    }
+                }
+                
+                e.target.value = value;
+            });
+        }
+    });
+</script>
 
    <!-- Contact Information Section -->
    <div class="container mt-5">

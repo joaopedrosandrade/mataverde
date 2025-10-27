@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Quotation;
 use App\Representant;
+use App\Contact;
 
 class FrontController extends Controller
 {
@@ -92,6 +93,30 @@ class FrontController extends Controller
     public function contato()
     {
         return view('front.contato');
+    }
+
+    public function storeContact(Request $request)
+    {
+        $request->validate([
+            'nome' => 'required|string|max:255',
+            'telefone' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'cidade' => 'nullable|string|max:255',
+            'assunto' => 'required|string',
+            'mensagem' => 'required|string',
+        ]);
+
+        Contact::create([
+            'nome' => $request->nome,
+            'telefone' => $request->telefone,
+            'email' => $request->email,
+            'cidade' => $request->cidade,
+            'assunto' => $request->assunto,
+            'mensagem' => $request->mensagem,
+        ]);
+
+        return redirect()->route('front.contato')
+            ->with('success', 'Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.');
     }
 
     public function qualidade()
