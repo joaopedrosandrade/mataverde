@@ -59,7 +59,7 @@
                   </div>
                   <div class="col-12 col-md-6">
                      <div class="form-group">
-                        <input type="text" class="form-control" name="telefone" placeholder="Telefone*" required>
+                        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone*" required>
                      </div>
                   </div>
                   <div class="col-12 col-md-6">
@@ -156,3 +156,50 @@
    <!-- Divider -->
    <div class="divider"></div>
 @endsection
+
+<style>
+    /* Corrige o problema do placeholder sendo cortado */
+    .contact-form-wrapper .form-control {
+        line-height: 1.5 !important;
+        padding: 12px 15px !important;
+        font-size: 14px !important;
+        height: auto !important;
+    }
+    
+    /* Garante que o placeholder apareça completamente */
+    .contact-form-wrapper .form-control::placeholder {
+        line-height: 1.5 !important;
+        overflow: visible !important;
+        white-space: normal !important;
+    }
+</style>
+
+<script>
+    // Máscara para telefone
+    document.addEventListener('DOMContentLoaded', function() {
+        const telefoneInput = document.getElementById('telefone');
+        
+        if (telefoneInput) {
+            telefoneInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                
+                // Limita a 11 dígitos (celular)
+                if (value.length > 11) {
+                    value = value.substring(0, 11);
+                }
+                
+                if (value.length <= 11) {
+                    if (value.length <= 10) {
+                        // Telefone fixo: (99) 9999-9999
+                        value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+                    } else {
+                        // Celular: (99) 99999-9999
+                        value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+                    }
+                }
+                
+                e.target.value = value;
+            });
+        }
+    });
+</script>
