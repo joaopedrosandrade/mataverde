@@ -3,92 +3,54 @@
 @section('title', 'Dashboard')
 
 @section('content')
-<div class="row">
-    <div class="col-md-3 mb-4">
-        <div class="card" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white;">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h6 class="mb-0">Usuários</h6>
-                        <h2 class="mt-2 mb-0">{{ \App\User::count() }}</h2>
-                    </div>
-                    <i class="fas fa-users fa-2x opacity-75"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3 mb-4">
-        <div class="card" style="background: linear-gradient(135deg, #20c997 0%, #17a2b8 100%); color: white;">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h6 class="mb-0">Produtos</h6>
-                        <h2 class="mt-2 mb-0">{{ \App\Product::count() }}</h2>
-                    </div>
-                    <i class="fas fa-box fa-2x opacity-75"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3 mb-4">
-        <div class="card" style="background: linear-gradient(135deg, #20c997 0%, #17a2b8 100%); color: white;">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h6 class="mb-0">Depoimentos</h6>
-                        <h2 class="mt-2 mb-0">{{ \App\Testimonial::count() }}</h2>
-                    </div>
-                    <i class="fas fa-comments fa-2x opacity-75"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3 mb-4">
+
+@php
+    $unreadQuotations = \App\Quotation::where('is_read', false)->count();
+    $unreadRepresentants = \App\Representant::where('is_read', false)->count();
+@endphp
+
+@if($unreadQuotations > 0 || $unreadRepresentants > 0)
+<div class="row g-3">
+    @if($unreadQuotations > 0)
+    <div class="col-12 {{ $unreadRepresentants > 0 ? 'col-md-6' : '' }} mb-3">
         <div class="card" style="background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%); color: white;">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
                         <h6 class="mb-0">Orçamentos</h6>
-                        <h2 class="mt-2 mb-0">{{ \App\Quotation::count() }}</h2>
-                        @if(\App\Quotation::where('is_read', false)->count() > 0)
-                            <small class="badge bg-danger">{{ \App\Quotation::where('is_read', false)->count() }} não lidos</small>
-                        @endif
+                        <h2 class="mt-2 mb-0">{{ $unreadQuotations }}</h2>
+                        <small class="badge bg-danger">Não lidos</small>
                     </div>
                     <i class="fas fa-file-invoice fa-2x opacity-75"></i>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-3 mb-4">
+    @endif
+    
+    @if($unreadRepresentants > 0)
+    <div class="col-12 {{ $unreadQuotations > 0 ? 'col-md-6' : '' }} mb-3">
         <div class="card" style="background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%); color: white;">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
                         <h6 class="mb-0">Representantes</h6>
-                        <h2 class="mt-2 mb-0">{{ \App\Representant::count() }}</h2>
-                        @if(\App\Representant::where('is_read', false)->count() > 0)
-                            <small class="badge bg-danger">{{ \App\Representant::where('is_read', false)->count() }} não lidos</small>
-                        @endif
+                        <h2 class="mt-2 mb-0">{{ $unreadRepresentants }}</h2>
+                        <small class="badge bg-danger">Não lidos</small>
                     </div>
                     <i class="fas fa-users fa-2x opacity-75"></i>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-md-3 mb-4">
-        <div class="card" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white;">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h6 class="mb-0">Ativos</h6>
-                        <h2 class="mt-2 mb-0">{{ \App\Testimonial::where('is_active', true)->count() }}</h2>
-                    </div>
-                    <i class="fas fa-check-circle fa-2x opacity-75"></i>
-                </div>
-            </div>
-        </div>
-    </div>
+    @endif
 </div>
+
+@if($unreadQuotations > 0 || $unreadRepresentants > 0)
+<div class="mb-4"></div>
+@endif
+
+@endif
 
 <div class="card">
     <div class="card-header bg-white">
@@ -105,7 +67,7 @@
             <li>Conteúdo do site</li>
             <li>Configurações gerais</li>
         </ul>
-        <div class="d-flex gap-2 flex-wrap">
+        <div class="d-flex gap-2 flex-wrap flex-column flex-md-row">
             <a href="{{ route('admin.quotations.index') }}" class="btn text-white" style="background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%);">
                 <i class="fas fa-file-invoice me-2"></i>Ver Orçamentos
                 @if(\App\Quotation::where('is_read', false)->count() > 0)

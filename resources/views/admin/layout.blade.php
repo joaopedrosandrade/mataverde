@@ -24,6 +24,7 @@
             color: rgba(255,255,255,0.8);
             padding: 12px 20px;
             transition: all 0.3s;
+            font-size: 0.9rem;
         }
         .sidebar .nav-link:hover {
             color: white;
@@ -50,17 +51,82 @@
             font-weight: 600;
             font-size: 1.2rem;
         }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 280px;
+                z-index: 1000;
+                transition: left 0.3s;
+            }
+            .sidebar.show {
+                left: 0;
+            }
+            .sidebar-backdrop {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                z-index: 999;
+            }
+            .sidebar-backdrop.show {
+                display: block;
+            }
+            .main-content {
+                padding: 15px;
+            }
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            .card-body {
+                padding: 1rem;
+            }
+            .table {
+                font-size: 0.85rem;
+            }
+            .btn-sm {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.8rem;
+            }
+            .nav-link .badge {
+                font-size: 0.7rem;
+            }
+        }
+        
+        /* Tablet Styles */
+        @media (min-width: 769px) and (max-width: 991px) {
+            .sidebar {
+                min-height: 100vh;
+            }
+            .main-content {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
+    <!-- Mobile Sidebar Backdrop -->
+    <div class="sidebar-backdrop" onclick="toggleSidebar()"></div>
+    
+    <div class="container-fluid px-0">
+        <div class="row g-0">
             <!-- Sidebar -->
             <div class="col-md-2 col-lg-2 px-0">
-                <div class="sidebar p-3">
-                    <div class="text-center mb-4">
-                        <h4 class="fw-bold"><i class="fas fa-leaf"></i> Mata Verde</h4>
-                        <small class="text-light">Painel Administrativo</small>
+                <div class="sidebar p-3" id="sidebar">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="text-center flex-grow-1">
+                            <h4 class="fw-bold mb-1"><i class="fas fa-leaf"></i> Mata Verde</h4>
+                            <small class="text-light">Painel Administrativo</small>
+                        </div>
+                        <button class="btn btn-link text-white d-md-none p-0" onclick="toggleSidebar()" style="font-size: 1.5rem;">
+                            <i class="fas fa-times"></i>
+                        </button>
                     </div>
                     <nav class="nav flex-column">
                         <a class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
@@ -100,12 +166,17 @@
             </div>
 
             <!-- Main Content -->
-            <div class="col-md-10 col-lg-10">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white mb-4 rounded shadow-sm">
-                    <div class="container-fluid">
-                        <span class="navbar-brand mb-0 h1">@yield('title')</span>
-                        <div class="d-flex align-items-center">
-                            <span class="me-3"><i class="fas fa-user-circle"></i> {{ Auth::user()->name }}</span>
+            <div class="col-md-10 col-lg-10 px-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white mb-0 mb-md-4 shadow-sm">
+                    <div class="container-fluid px-3">
+                        <div class="d-flex align-items-center w-100">
+                            <button class="btn btn-link text-dark d-md-none me-2" onclick="toggleSidebar()" style="font-size: 1.5rem;">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <span class="navbar-brand mb-0 h1 flex-grow-1">@yield('title')</span>
+                            <div class="d-none d-md-flex align-items-center">
+                                <span class="me-3"><i class="fas fa-user-circle"></i> {{ Auth::user()->name }}</span>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -133,6 +204,28 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const backdrop = document.querySelector('.sidebar-backdrop');
+            
+            sidebar.classList.toggle('show');
+            backdrop.classList.toggle('show');
+        }
+        
+        // Close sidebar when clicking outside
+        document.addEventListener('click', function(event) {
+            const sidebar = document.getElementById('sidebar');
+            const backdrop = document.querySelector('.sidebar-backdrop');
+            const isClickInsideSidebar = sidebar.contains(event.target);
+            const isMenuButton = event.target.closest('button[onclick="toggleSidebar()"]');
+            
+            if (!isClickInsideSidebar && !isMenuButton && sidebar.classList.contains('show')) {
+                sidebar.classList.remove('show');
+                backdrop.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>
 

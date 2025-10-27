@@ -23,8 +23,8 @@
     <div class="card-body">
         @if($representants->count() > 0)
         <div class="table-responsive">
-            <table class="table table-hover">
-                <thead>
+            <table class="table table-hover table-sm">
+                <thead class="table-light d-none d-md-table-header-group">
                     <tr>
                         <th>Nome</th>
                         <th>CPF</th>

@@ -12,8 +12,8 @@
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-hover">
-                <thead>
+            <table class="table table-hover table-sm">
+                <thead class="table-light d-none d-md-table-header-group">
                     <tr>
                         <th>Foto</th>
                         <th>Nome</th>
