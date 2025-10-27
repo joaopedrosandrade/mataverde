@@ -75,7 +75,7 @@
                 <a href="{{ route('admin.testimonials.index') }}" class="btn btn-secondary">
                     <i class="fas fa-arrow-left me-2"></i>Cancelar
                 </a>
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn text-white" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
                     <i class="fas fa-save me-2"></i>Salvar Depoimento
                 </button>
             </div>

@@ -5,7 +5,7 @@
 @section('content')
 <div class="row">
     <div class="col-md-3 mb-4">
-        <div class="card bg-primary text-white">
+        <div class="card" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white;">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="col-md-3 mb-4">
-        <div class="card bg-success text-white">
+        <div class="card" style="background: linear-gradient(135deg, #20c997 0%, #17a2b8 100%); color: white;">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="col-md-3 mb-4">
-        <div class="card bg-info text-white">
+        <div class="card" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white;">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="col-md-3 mb-4">
-        <div class="card bg-warning text-white">
+        <div class="card" style="background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%); color: white;">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
@@ -70,7 +70,7 @@
             <li>Conteúdo do site</li>
             <li>Configurações gerais</li>
         </ul>
-        <a href="{{ route('admin.testimonials.index') }}" class="btn btn-primary">
+        <a href="{{ route('admin.testimonials.index') }}" class="btn text-white" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
             <i class="fas fa-comments me-2"></i>Gerenciar Depoimentos
         </a>
     </div>

@@ -17,7 +17,7 @@
         }
         .sidebar {
             min-height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
             color: white;
         }
         .sidebar .nav-link {
@@ -42,6 +42,9 @@
             border: none;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .brand-color {
+            color: #28a745;
         }
         .navbar-brand {
             font-weight: 600;
@@ -68,7 +71,7 @@
                         </a>
                         <hr class="text-white-50">
                         <a class="nav-link" href="{{ route('front.index') }}" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i> Ver Site
+                            <i class="fas fa-globe me-2"></i> Ver Site
                         </a>
                         <a class="nav-link" href="{{ route('logout') }}"
                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

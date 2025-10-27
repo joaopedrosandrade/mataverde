@@ -6,7 +6,7 @@
 <div class="card">
     <div class="card-header bg-white d-flex justify-content-between align-items-center">
         <h5 class="mb-0"><i class="fas fa-comments me-2"></i>Gerenciar Depoimentos</h5>
-        <a href="{{ route('admin.testimonials.create') }}" class="btn btn-primary">
+        <a href="{{ route('admin.testimonials.create') }}" class="btn text-white" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
             <i class="fas fa-plus me-2"></i>Novo Depoimento
         </a>
     </div>
@@ -49,7 +49,7 @@
                         <td>{{ $testimonial->order }}</td>
                         <td>
                             <a href="{{ route('admin.testimonials.edit', $testimonial->id) }}" 
-                               class="btn btn-sm btn-primary">
+                               class="btn btn-sm text-white" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
                                 <i class="fas fa-edit"></i>
                             </a>
                             <form action="{{ route('admin.testimonials.destroy', $testimonial->id) }}" 
@@ -67,7 +67,7 @@
                     <tr>
                         <td colspan="6" class="text-center">
                             <p class="text-muted mb-0">Nenhum depoimento encontrado.</p>
-                            <a href="{{ route('admin.testimonials.create') }}" class="btn btn-primary mt-3">
+                            <a href="{{ route('admin.testimonials.create') }}" class="btn mt-3 text-white" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
                                 <i class="fas fa-plus me-2"></i>Criar Primeiro Depoimento
                             </a>
                         </td>
