@@ -66,6 +66,15 @@
                         <a class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
                             <i class="fas fa-home me-2"></i> Dashboard
                         </a>
+                        <a class="nav-link {{ request()->routeIs('admin.quotations.*') ? 'active' : '' }}" href="{{ route('admin.quotations.index') }}">
+                            <i class="fas fa-file-invoice me-2"></i> Orçamentos
+                            @if(\App\Quotation::where('is_read', false)->count() > 0)
+                                <span class="badge bg-danger ms-1">{{ \App\Quotation::where('is_read', false)->count() }}</span>
+                            @endif
+                        </a>
+                        <a class="nav-link {{ request()->routeIs('admin.products.*') ? 'active' : '' }}" href="{{ route('admin.products.index') }}">
+                            <i class="fas fa-box me-2"></i> Produtos
+                        </a>
                         <a class="nav-link {{ request()->routeIs('admin.testimonials.*') ? 'active' : '' }}" href="{{ route('admin.testimonials.index') }}">
                             <i class="fas fa-comments me-2"></i> Depoimentos
                         </a>

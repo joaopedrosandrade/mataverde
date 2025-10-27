@@ -36,8 +36,15 @@
 
             <div class="divider-sm"></div>
 
+            @if(session('success'))
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+               <strong>Sucesso!</strong> {{ session('success') }}
+               <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            @endif
+
             <!-- Contact Form -->
-            <form action="#" method="POST">
+            <form action="{{ route('front.orcamento.store') }}" method="POST">
                @csrf
                <div class="row g-4">
                   <div class="col-12 col-md-6">
